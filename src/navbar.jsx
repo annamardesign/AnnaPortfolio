@@ -4,12 +4,6 @@ import "./navbar.css";
 
 const NavBar = () => {
   
- // function showHoverLines(e) {
-   // e.target.style.outline = 'none';
-   // e.target.style.top 
-
-  //}
-  
     return (<div className="topnav">
     <NavLink to="/resume" className="logo">Logo</NavLink>
     <NavLink to="/resume" className="navli">Resume</NavLink>

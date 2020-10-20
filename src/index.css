@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #021D44;
 }
 
 code {
@@ -12,5 +13,29 @@ code {
     monospace;
 }
 h1 {
-  color:black;
+  padding: 60px;
+  text-align: center;
+  background: #021D44;
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  animation: show 500ms ease-out forwards;
+  animation-delay: 200ms;
+  opacity: 0;
+}
+@-webkit-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
