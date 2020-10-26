@@ -1,11 +1,26 @@
-import React from 'react'
-function filterButton(props) {
-    return (
+
+import React from 'react';
+import './filterButton.css';
+import useFilter from '../hooks/useFilter.jsx';
+
+export default function FilterButton(props) {
+  let filterValue = "All"
+  const handleButtonClick = (e, filteredValue) => {
+    if(filteredValue !== null){
+      filterValue = filteredValue
+    }
+  }
+  // useFilter(filterValue)
+
+ 
+  return (
       <button
         type="button"
-        className="btn toggle-btn"
         aria-pressed={props.isPressed}
-        onClick={() => props.setFilter(props.name)}
-      >{props.name}</button>
+        onClick={(e) => handleButtonClick(e, props.value)}
+      >
+        {props.value}
+      </button>
     );
   }
+ 

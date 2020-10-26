@@ -1,9 +1,11 @@
-function useFilter() {
-const [filter, setFilter] = useState('All');
+import { useState } from "react";
+
+ function useFilter (currentState) {
+    const [category, setCategory] = useState(null);
+    currentState === null ? setCategory("All") : setCategory(currentState);
+    return category;
 }
-const FILTER_MAP = {
-    All: () => true,
-    Web: category => !web.category,
-    Illustration: category => illustration.category
-  };
-const FILTER_NAMES = Object.keys(FILTER_MAP);
+export default useFilter;
+
+ 
+
