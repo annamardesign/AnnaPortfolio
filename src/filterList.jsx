@@ -1,7 +1,7 @@
 import React from 'react';
 import { projectsData } from './services/projectsData.js';
 import './filterList.css';
-import FilterButton from './components/FilterButton';
+import FilterButton from './components/filterButton';
 import './App.css';
 
 
