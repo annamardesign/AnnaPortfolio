@@ -82,7 +82,19 @@
     height: 100%;
   } 
 
-  .topnav .navli:active {
-    color: #ff3e55;
+  .topnav .active {
+    color:#ff3e55;
+    transition: #ff3e55 15s;
+    -webkit-transition: #ff3e55 15s;
+    -moz-transition: #ff3e55 15s;
+  }
+  .topnav .active::before {
+    top: 100%;
+    opacity: 1;
+  }
+  
+  .topnav .active::after{
+    height: 100%;
+
   }
   

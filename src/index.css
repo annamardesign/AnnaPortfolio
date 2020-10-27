@@ -58,7 +58,7 @@ code {
   color:#ff3e55;
   text-align:center;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 70%;
   transition: all 0.2s;
   width: 9vw;
   height: 9vw;
@@ -77,7 +77,7 @@ code {
   color:#ff3e55;
   text-align:center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 60%;
   transition: all 0.2s;
   width: 9vw;
   height: 9vw;
