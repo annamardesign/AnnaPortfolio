@@ -18,7 +18,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-h1 {
+/* PROJECTS CSS */ 
+.page {
   padding: 60px;
   text-align: center;
   background: #021D44;
@@ -26,7 +27,7 @@ h1 {
   font-size: 30px;
   margin: 0 auto;
   animation: show 500ms ease-out forwards;
-  animation-delay: 200ms;
+  animation-delay: 240ms;
   opacity: 0;
 }
 @-webkit-keyframes show {
@@ -45,3 +46,68 @@ h1 {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
+
+
+.toggle-btn {
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  font-weight:300;
+  color:#ff3e55;
+  text-align:center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+  width: 9vw;
+  height: 9vw;
+  cursor:pointer;
+  background-color:#021D44;
+  }
+
+.toggle-btn-active {
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:none;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  text-decoration:none;
+  font-weight:500;
+  color:#ff3e55;
+  text-align:center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.2s;
+  width: 9vw;
+  height: 9vw;
+  cursor:pointer;
+  background-color:#FFFFFF;
+  }
+.toggle-btn:hover {
+  color:#021D44;
+  background-color:#FFFFFF;
+  border:0.1em solid #FFFFFF;
+  }
+  @media all and (max-width:30em){
+  .toggle-btn {
+   display:block;
+   margin:0.4em auto;
+   }
+  }
+  .thumb-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  .filter-button-container {
+    display: flex;
+    flex-direction: wrap;
+    margin-top: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #021D44;
+    height: 10rem;
+  }
+  
