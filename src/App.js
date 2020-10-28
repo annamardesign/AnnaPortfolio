@@ -6,7 +6,6 @@ import Resume from "./resume";
 import Projects from "./projects";
 import Freebies from "./freebies";
 import Contact from "./contact";
-import SocialMedia from "./socialmedia";
 import './App.css';
 
 
@@ -22,9 +21,8 @@ function App() {
       <Route path="/projects" component={Projects}/>
       <Route path="/freebies" component={Freebies}/>
       <Route path="/contact" component={Contact}/>
-      <Route path="/socialmedia" component={SocialMedia}/>
       <Redirect from="/" exact to ="/resume"/>
-      <Redirect from="/logo"to ="/resume"/>
+      <Redirect from="/logo" exact to ="/resume"/>
       <Redirect to="/not-found"/>
       </Switch>
     </main>

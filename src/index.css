@@ -110,4 +110,51 @@ code {
     background-color: #021D44;
     height: 10rem;
   }
+ /* SOCIAL MEDIA */ 
+   .social-container {
+    background: #021D44;
+    margin-right: 1rem;
+    position: relative;
+	  display: inline-block;
+    padding: 0 1rem;
+	  outline: none;
+	  color: #F9FAFA;
+    text-decoration: none;
+    line-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    }
+  
+    a.social {
+      justify-content: space-between;
+      margin-left: 1rem;
+      color: #FFFFFF;
+      
+     }
+    a.social:hover {
+    transform: translateY(-2px);
+    color: #888;
+    transition: color 0.5s;
+    }
+   
+    .icon {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    transition: all 150ms linear;
+    line-height: 1;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    }
+   
+    
+    
+    
+
+    
   

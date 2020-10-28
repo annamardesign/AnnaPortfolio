@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Website extends Component {
     
     render() { 
-        return ( <div><h1>Website Projects Subpage</h1></div> );
+        return ( <div className="page"><h1>Website Projects Subpage</h1></div> );
     }
 }
  
