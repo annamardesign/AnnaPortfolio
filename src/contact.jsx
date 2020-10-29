@@ -9,26 +9,44 @@ class Contact extends Component {
        message: ''
       }
     }
+    onNameChange(event) {
+     this.setState({name: event.target.value})
+    }
+    onNumberChange(event) {
+     this.setState({number: event.target.value})
+    }
+    onEmailChange(event) {
+     this.setState({email: event.target.value})
+    }
+    onMessageChange(event) {
+     this.setState({message: event.target.value})
+    }
+    
+    handleSubmit( event ) {
+     event.preventDefault();
+     console.log(this.state);
+    }
+
     render() { 
         return (
         <div className="page">
          <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-           <label htmlFor="name">Name:</label><br>
+           <label htmlFor="name">Name:</label>
            <input type="text"
-            value={this.state.name} 
             className="form-input" 
-            onChange={this.onNameChange.bind(this)}/><br>
+            value={this.state.name}
+            onChange={this.onNameChange.bind(this)}/>
 
-           <label htmlFor="number">Phone Number:</label><br>
+           <label htmlFor="number">Phone Number:</label>
            <input type="number" 
-           value={this.state.number} 
            className="form-input" 
+           value={this.state.number} 
            onChange={this.onNumberChange.bind(this)}/>
 
-           <label htmlFor="email">Email:</label><br>
+           <label htmlFor="email">Email:</label>
            <input type="email" 
-           value={this.state.email} 
            className="form-input" 
+           value={this.state.email} 
            onChange={this.onEmailChange.bind(this)}/>
 
            <label htmlFor="message">Message</label>
@@ -40,7 +58,8 @@ class Contact extends Component {
           
           <button type="submit" className="send-btn">Send</button>
         </form>
-           </div>  );
+    </div>  
+           );
     }
 }
  
