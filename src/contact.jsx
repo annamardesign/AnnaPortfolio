@@ -34,31 +34,35 @@ class Contact extends Component {
             <div className="contact"><p className="contact-text">Contact me</p></div>
          <form className="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="input-group">
-           <label htmlFor="name">Name:</label>
+           <label htmlFor="name" >Name:</label>
            <input type="text"
+            placeholder="Your Name"
             className="form-input" 
             value={this.state.name}
             onChange={this.onNameChange.bind(this)}/>
          </div><br />
          <div className="input-group">
-           <label htmlFor="number">Phone:</label>
-           <input type="number" 
+           <label htmlFor="number" >Phone:</label>
+           <input type="tel"
+           placeholder="Your Phone Number" 
            className="form-input" 
            value={this.state.number} 
            onChange={this.onNumberChange.bind(this)}/>
          </div><br />
          <div className="input-group">
-           <label htmlFor="email">Email:</label>
+           <label htmlFor="email" >Email:</label>
            <input type="email" 
+           placeholder="Your Email"
            className="form-input" 
            value={this.state.email} 
            onChange={this.onEmailChange.bind(this)}/>
          </div><br />
          <div className="input-group">
-           <label htmlFor="message">Message</label>
+           <label htmlFor="message" >Message</label>
            <textarea 
+           placeholder="Write your message here!"
            className="form-control" 
-           rows="15" 
+           rows="10" 
            value={this.state.message} 
            onChange={this.onMessageChange.bind(this)} />
           

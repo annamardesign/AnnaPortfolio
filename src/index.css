@@ -172,13 +172,12 @@ code {
     width: 50vw;
     max-width: inherit;
     margin-left:0;
-    background-color: #9999ff;
    }
    .contact-form {
     display:flex;
     flex-basis:50vw;
     flex-direction: column;
-    background-color:pink;
+    background-color:#F9FAFA;
     width: 60vw;
     max-width: 50%;
     padding: 2rem 4rem;
@@ -186,59 +185,75 @@ code {
    }
    
    .input-group {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     display: block;
     flex-direction: column;
     flex: 1;
    
    }
    .input-group:last-child {
-    margin-bottom:0;
+    margin-bottom: 0;
    }
    .input-group label {
     display:block;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0rem;
    }
    .input-group .form-input {
     outline:none;
     background: none;
     background-color: transparent;
-    border:1px solid #1762a7;
+    border:1px solid #808080;
     font-size: 1em;
     padding: 0.5em;
     color: inherit;
-    border-radius: 5px;
+    border-radius: 0.9em;
    }
    .input-group .form-input:focus {
-    border-color:#ff3e55;
+    border-color:#1762a7;
    }
    
    .contact-text {
-    font-size:3rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin:0;
+    margin: 0;
     color: #ff3e55;
+    margin: 0 auto;
+    margin-top: 0.3em;
+    
    }
    .send-btn {
     color:white;
-    background-color:#9999ff ;
+    background-color:#ff3e55;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
-    text-decoration:none;
-    font-size:0.9rem;
+    text-decoration: none;
+    font-size: 0.9rem;
     outline: none;
-    border:none;
-    cursor:pointer;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
   }
    .send-btn:hover {
-    background-color:#2180d9;
+    background-color:#ff3e59;
   }
    .send-btn:focus{
-    background-color:#2180d9;
+    background-color:#ff3e55;
    }
 
-   
-  
+   .form-control {
+     resize: none;
+     outline: none;
+     overflow: auto;
+     flex: 1;
+     font-size: 1em;
+     padding: 0.8em;
+     border-radius: 0.9em;
+     border-color:#808080;
+   }
+   .form-control:focus {
+    border-color:#1762a7;
+   }
   
    
    @media(max-width: 900px) {
