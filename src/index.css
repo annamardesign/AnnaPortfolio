@@ -180,12 +180,11 @@ code {
     background-color:#F9FAFA;
     width: 60vw;
     max-width: 50%;
-    padding: 2rem 4rem;
     border-radius: 20px;
    }
    
    .input-group {
-    margin-bottom: 0;
+    margin-bottom:-1rem;
     display: block;
     flex-direction: column;
     flex: 1;
@@ -217,8 +216,7 @@ code {
     font-weight: bold;
     margin: 0;
     color: #ff3e55;
-    margin: 0 auto;
-    margin-top: 0.3em;
+    margin: 0;
     
    }
    .send-btn {
@@ -262,6 +260,24 @@ code {
     justify-content: center;
     }
    }
+
+    /* RESUME CSS */
+    .drawing-panel {
+      background-color: #141414;
+      display:flex;
+      flex-basis:50vw;
+      flex-direction: column;
+      width: 60vw;
+      max-width: 50%;
+      border-radius: 20px;
+    }
+    .path {
+      fill: none;
+      stroke-width: 1px;
+      stroke: black;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
     
     
 

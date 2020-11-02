@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
-class Resume extends Component {
-    render() { 
-        return ( <div className="page"><h1>Resume</h1></div> );
+import DrawingPanel from "./common/drawing.jsx";
+
+export default class Resume extends Component {
+
+    render() {
+        
+        return (<React.Fragment>
+             <div className="page">
+              <h3>Inspire</h3>
+              <h3>Create</h3>
+              <section className="drawing">
+              < DrawingPanel onMouseMove={ this.handleMouseMove } />
+              </section>
+            </div> 
+            </React.Fragment>
+        )
     }
 }
- 
-export default Resume;
+

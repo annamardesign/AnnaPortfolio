@@ -42,7 +42,6 @@ class Contact extends Component {
             onChange={this.onNameChange.bind(this)}/>
          </div><br />
          <div className="input-group">
-           <label htmlFor="number" >Phone:</label>
            <input type="tel"
            placeholder="Your Phone Number" 
            className="form-input" 
@@ -50,7 +49,6 @@ class Contact extends Component {
            onChange={this.onNumberChange.bind(this)}/>
          </div><br />
          <div className="input-group">
-           <label htmlFor="email" >Email:</label>
            <input type="email" 
            placeholder="Your Email"
            className="form-input" 
@@ -58,11 +56,10 @@ class Contact extends Component {
            onChange={this.onEmailChange.bind(this)}/>
          </div><br />
          <div className="input-group">
-           <label htmlFor="message" >Message</label>
            <textarea 
            placeholder="Write your message here!"
            className="form-control" 
-           rows="10" 
+           rows="8" 
            value={this.state.message} 
            onChange={this.onMessageChange.bind(this)} />
           
