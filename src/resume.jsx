@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DrawingPanel from "./common/drawing.jsx";
+import FingerPrintPanel from "./common/fingerprint.jsx";
 
 export default class Resume extends Component {
 
@@ -10,7 +10,7 @@ export default class Resume extends Component {
               <h3>Inspire</h3>
               <h3>Create</h3>
               <section className="drawing">
-              < DrawingPanel onMouseMove={ this.handleMouseMove } />
+              < FingerPrintPanel onMouseMove={ this.handleMouseMove } />
               </section>
             </div> 
             </React.Fragment>

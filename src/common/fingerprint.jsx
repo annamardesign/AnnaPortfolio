@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { GiFingerPrint } from "react-icons/gi";
-class DrawingPanel extends Component {
+class FingerPrintPanel extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -18,7 +18,7 @@ class DrawingPanel extends Component {
     }
     onAddFingerPrint = (e) => {
       this.setState({
-        numPrints: this.state.numPrints + 1
+        numPrints: this.state.numPrints + 10
       });
     }
         
@@ -36,4 +36,4 @@ class DrawingPanel extends Component {
           }
         }
 
-export default DrawingPanel;
+export default FingerPrintPanel;
