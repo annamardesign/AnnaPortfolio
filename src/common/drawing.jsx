@@ -26,10 +26,10 @@ class DrawingPanel extends Component {
             const { x, y, image } = this.state;
             const children = [];
             for (let i = 0; i < this.state.numPrints; i += 1) {
-              children.push(<GiFingerPrint key={i} number={i} />);
+              children.push(<GiFingerPrint key={i} number={i} style={{spaceBetween:"0", overflow:"hidden"}}/>);
             };
             return <div className="canvas" onClick={this.onAddFingerPrint}
-            style={{width:"500px", height:"500px", borderRadius:"50%", backgroundColor:"#222222"}}
+            style={{width:"500px", height:"500px", borderRadius:"50%", overflow:"hidden", backgroundColor:"#222222"}}
             onMouseMove={this.handleMouseMove} > {children}
               <p>Leave your print</p>
             </div>
