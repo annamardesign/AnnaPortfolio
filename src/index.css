@@ -25,6 +25,10 @@ code {
 }
 /* PROJECTS CSS */ 
 .page {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
   padding: 60px;
   text-align: center;
   background: #021D44;
@@ -262,15 +266,33 @@ code {
    }
 
     /* RESUME CSS */
-    .drawing-panel {
-      background-color: #141414;
+    .create {
       display:flex;
       flex-basis:50vw;
       flex-direction: column;
+      align-content: flex-start;
       width: 60vw;
       max-width: 50%;
       border-radius: 20px;
+      padding:0;
+      cursor:pointer;
     }
+    .drawing-panel {
+      display:flex;
+      z-index: -1;
+      flex-basis: 10vw;
+
+    }
+    .about-me {
+      text-align:center;
+    }
+    .about-me-center {
+      margin: auto;
+      width: 50%;
+      border: 3px solid #ff3e55;
+      padding: 10px;
+    }
+  
     .path {
       fill: none;
       stroke-width: 1px;
@@ -278,6 +300,11 @@ code {
       stroke-linejoin: round;
       stroke-linecap: round;
     }
+    
+       
+  
+      
+
     
     
 

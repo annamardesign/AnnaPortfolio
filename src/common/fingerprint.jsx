@@ -6,16 +6,13 @@ class FingerPrintPanel extends Component {
         this.state = {
           x: 0,
           y: 0,
-          canvasIsClicked: false,
           numPrints:0
         }
     }
     handleMouseMove = (e) => {
         this.setState({ x: e.screenX, y: e.screenY });
     }
-    handleAddFingerPrint = (e) => {
-        this.setState({ canvasIsClicked: true })
-    }
+    
     onAddFingerPrint = (e) => {
       this.setState({
         numPrints: this.state.numPrints + 10
@@ -29,7 +26,7 @@ class FingerPrintPanel extends Component {
               children.push(<GiFingerPrint key={i} number={i} style={{spaceBetween:"0", overflow:"hidden"}}/>);
             };
             return <div className="canvas" onClick={this.onAddFingerPrint}
-            style={{width:"500px", height:"500px", borderRadius:"50%", overflow:"hidden", backgroundColor:"#222222"}}
+            style={{width:"20rem", height:"20rem", borderRadius:"50%", overflow:"hidden", backgroundColor:"#222222"}}
             onMouseMove={this.handleMouseMove} > {children}
               <p>Leave your print</p>
             </div>
