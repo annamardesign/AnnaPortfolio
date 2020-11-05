@@ -4,13 +4,8 @@ class FingerPrintPanel extends Component {
     constructor(props){
         super(props)
         this.state = {
-          x: 0,
-          y: 0,
           numPrints:0
         }
-    }
-    handleMouseMove = (e) => {
-        this.setState({ x: e.screenX, y: e.screenY });
     }
     
     onAddFingerPrint = (e) => {
@@ -20,14 +15,13 @@ class FingerPrintPanel extends Component {
     }
         
           render() {
-            const { x, y, image } = this.state;
-            const children = [];
+           const children = [];
             for (let i = 0; i < this.state.numPrints; i += 1) {
               children.push(<GiFingerPrint key={i} number={i} style={{spaceBetween:"0", overflow:"hidden"}}/>);
             };
-            return <div className="canvas" onClick={this.onAddFingerPrint}
+          return <div className="canvas" onClick={this.onAddFingerPrint}
             style={{width:"20rem", height:"20rem", borderRadius:"50%", overflow:"hidden", backgroundColor:"#222222"}}
-            onMouseMove={this.handleMouseMove} > {children}
+            > {children}
               <p>Leave your print</p>
             </div>
           }

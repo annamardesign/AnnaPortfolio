@@ -1,41 +1,47 @@
 import React, {Component} from 'react';
-import { BsDot } from "react-icons/bs";
-class DrawingPanel extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-          x: 0,
-          y: 0,
-          mouseIsMoved:false,
-          numDrawing:0
-        }
-    }
-    handleMouseMove = (e) => {
-        this.setState({ x: e.screenX, y: e.screenY });
-    }
-    handleAddDrawing = (e) => {
-        this.setState({ mouseIsMoved: true })
-    }
-    onAddDrawing = (e) => {
-      this.setState({
-        numDrawing: this.state.numDrawing + 1
-      });
-    }
-        
-          render() {
-            const { x, y } = this.state;
-            const children = [];
+import {useState, useEffect, useCallback} from 'react';
+import DrawingPath from "../components/DrawingPath";
 
-            for (let i = 0; i < this.state.numDrawing; i += 1) {
-              children.push(<BsDot key={i} number={i} style={{spaceBetween:"-30", overflow:"hidden"}}/>);
-             };
+const DrawingPanel = (props) => {
+  const {coordinatesX, setCoordinatesX} = useState(0);
+  const {coordinatesY, setCoordinatesY} = useState(0);
+  const {mousePosition, setMousePosition} = useState(0)
+  const {drawing, setDrawing} = useState(false);
+
+  const handleDrawing = useCallback((e: onMouseMove) => {
+   const coordinates = (e) => {
+    setCoordinatesX(e.screenX)
+    setCoordinatesY(e.screenY)
+   }
+    if (coordinates === true) {
+    setDrawing(true);
+    setMousePosition(coordinates);
+    }
+  }, []);
     
-            return <div className="canvas" style={{width:"28rem", height:"28rem", borderRadius:"50%", overflow:"hidden", backgroundColor:"#222222"}}
-            onClick={this.onAddDrawing}
-            onMouseMove={this.handleMouseMove} > {children}
-              <p>Draw</p>
-            </div>
-          }
-        }
 
+  useEffect(() => {
+   window.addEventListener("mousemove", handleDrawing);
+   return () => {
+    window.removeEventListener("mousemove", handleDrawing);
+   };
+  }, [handleDrawing]);
+
+  if (setDrawing === true) {
+    handleDrawing = ({lines}) => { 
+     return <svg>
+        {lines.map((line, index) => (
+          <DrawingPath key={index} line={line} />
+        ))}
+      </svg>
+    };
+  }
+
+  return ( <div className="canvas" style={{width:"28rem", height:"28rem", borderRadius:"50%", overflow:"hidden", backgroundColor:"#222222"}}
+  onMouseMove={handleDrawing} >
+    <p>Draw</p>
+    
+  </div> );
+}
 export default DrawingPanel;
+ 
