@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {useState, useEffect, useCallback} from 'react';
+// import update from 'react-addons-update';
 import DrawingPath from "../components/DrawingPath";
 
 const DrawingPanel = (props) => {
@@ -13,33 +14,37 @@ const DrawingPanel = (props) => {
     setCoordinatesX(e.screenX)
     setCoordinatesY(e.screenY)
    }
-    if (coordinates === true) {
-    setDrawing(true);
-    setMousePosition(coordinates);
+    if (coordinates !== 0) {
+      // setDrawing(true);
+      // setMousePosition(coordinates);
     }
   }, []);
+  
+  let finalPainting 
+  const startDrawing = (e: onMouseDown) => { 
+    let painting = [];
+    // finalPainting = update(painting, {$push: <DrawingPath />}); 
+    };
+    
     
 
-  useEffect(() => {
-   window.addEventListener("mousemove", handleDrawing);
-   return () => {
-    window.removeEventListener("mousemove", handleDrawing);
-   };
-  }, [handleDrawing]);
+    if (setDrawing === true) {
+    startDrawing();
+    }
 
-  if (setDrawing === true) {
-    handleDrawing = ({lines}) => { 
-     return <svg>
-        {lines.map((line, index) => (
-          <DrawingPath key={index} line={line} />
-        ))}
-      </svg>
+    useEffect(() => {
+     window.addEventListener("mousemove", handleDrawing);
+     window.addEventListener("mousedown", startDrawing)
+      return () => {
+      window.removeEventListener("mousemove", handleDrawing);
+      window.removeEventListener("mousedown", startDrawing)
     };
-  }
+   }, [handleDrawing, startDrawing]);
 
   return ( <div className="canvas" style={{width:"28rem", height:"28rem", borderRadius:"50%", overflow:"hidden", backgroundColor:"#222222"}}
-  onMouseMove={handleDrawing} >
+  onMouseMove={handleDrawing} onMouseDown={startDrawing}>
     <p>Draw</p>
+    <svg><path>{finalPainting}</path></svg>
     
   </div> );
 }
