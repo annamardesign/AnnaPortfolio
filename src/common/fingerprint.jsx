@@ -4,38 +4,32 @@ class FingerPrintPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      x: 0,
-      y: 0,
-      numPrints: 0
+      numPrints: 0,
+      prints:[]
     };
   }
-
   
-  handleClick = (e) => {
-    this.setState({ x: e.screenX, y: e.screenY });
-  }
-  
-
   onAddFingerPrint = (e) => {
-    this.handleClick(e);
     this.setState({
       numPrints: this.state.numPrints + 1
     });
+    
+    let print = this.generatePrint(e.clientX, e.clientY);
+    
+    this.setState({ prints: this.state.prints.concat(print) });
   };
 
-    
-  render() {
-    const { x, y } = this.state;
-    const prints = [];
-    let left = x + "px";
-    let top = y + "px";
-      
-    for (let i = 0; i < this.state.numPrints; i += 1) {
-      prints.push(
-        <GiFingerPrint key={i} number={i} style={{left, top, position:"absolute"}} className="finger" />
-      );
-    }
+  generatePrint(x, y) {
+    return <GiFingerPrint 
+              key={this.state.numPrints} 
+              number={this.state.numPrints} 
+              style={{ left: x-15, top: y-15, position: "absolute" }} 
+              className="finger-print" 
+            />;
+  }
 
+  render() {
+    
     return (
       <div
         className="canvas"
@@ -48,11 +42,10 @@ class FingerPrintPanel extends Component {
           backgroundColor: '#222222'
         }}
       >
-        {prints}
-        <p>Leave your print</p>
+        {this.state.prints}
+        <p style={{ userSelect: "none" }}>Leave your print</p>
       </div>
     );
   }
 }
-
 export default FingerPrintPanel;

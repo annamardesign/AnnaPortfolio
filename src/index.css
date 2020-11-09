@@ -286,8 +286,11 @@ code {
       display:flex;
       z-index: -1;
       flex-basis: 10vw;
-      cursor:pointer;
-
+   
+    }
+    .canvas {
+      cursor: pointer;
+      padding: 0;
     }
     .about-me {
       text-align:center;
