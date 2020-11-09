@@ -280,12 +280,13 @@ code {
       max-width: 50%;
       border-radius: 20px;
       padding:0;
-      cursor:pointer;
+     
     }
     .drawing-panel {
       display:flex;
       z-index: -1;
       flex-basis: 10vw;
+      cursor:pointer;
 
     }
     .about-me {

@@ -16,8 +16,8 @@ class FingerPrintPanel extends Component {
   }
   
 
-  onAddFingerPrint = () => {
-    this.handleClick();
+  onAddFingerPrint = (e) => {
+    this.handleClick(e);
     this.setState({
       numPrints: this.state.numPrints + 1
     });
@@ -27,13 +27,12 @@ class FingerPrintPanel extends Component {
   render() {
     const { x, y } = this.state;
     const prints = [];
-    const position = {
-      left: x,
-      top: y
-    };
+    let left = x + "px";
+    let top = y + "px";
+      
     for (let i = 0; i < this.state.numPrints; i += 1) {
       prints.push(
-        <GiFingerPrint key={i} number={i} style={position} className="finger" />
+        <GiFingerPrint key={i} number={i} style={{left, top, position:"absolute"}} className="finger" />
       );
     }
 
