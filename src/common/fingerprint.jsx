@@ -14,7 +14,7 @@ class FingerPrintPanel extends Component {
       numPrints: this.state.numPrints + 1
     });
     
-    let print = this.generatePrint(e.clientX, e.clientY);
+    let print = this.generatePrint(e.pageX, e.pageY);
     
     this.setState({ prints: this.state.prints.concat(print) });
   };
