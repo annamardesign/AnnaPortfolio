@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FingerPrintPanel from "./common/fingerprint.jsx";
-import DrawingPanel from "./common/drawing.jsx";
-import DragPanel from "./common/draganddrop.jsx";
+import DrawingPanel from "./common/draw.jsx";
+
 
 export default class Resume extends Component {
 
@@ -10,9 +10,8 @@ export default class Resume extends Component {
         return (<React.Fragment>
              <div className="page">
               <main className="create">
-              < DragPanel className="drag-panel"/>
-              < FingerPrintPanel className="fingerprint-panel" onMouseMove={ this.handleMouseMove } />
-              < DrawingPanel className="drawing-panel"/>
+              < FingerPrintPanel className="fingerprint-panel" />
+              < DrawingPanel className="drawing-panel" />
               </main>
               <sidebar className="about-me-center">
                   <img src={ require("./images/Anna.png")} style={{width:"50%"}}/>

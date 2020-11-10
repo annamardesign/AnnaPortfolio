@@ -9,7 +9,7 @@ class FingerPrintPanel extends Component {
     };
   }
   
-  onAddFingerPrint = (e) => {
+  addFingerPrint = (e) => {
     this.setState({
       numPrints: this.state.numPrints + 1
     });
@@ -27,13 +27,17 @@ class FingerPrintPanel extends Component {
               className="finger-print" 
             />;
   }
+  deletePrint = (e) => {
+    this.setState({ prints: [] });
+   }
 
   render() {
     
-    return (
+    return (<React.Fragment>
+      <button onClick={this.deletePrint} style={{borderRadius:"50%", width:"3rem", height:"3rem"}}>Clear</button>
       <div
         className="canvas"
-        onClick={this.onAddFingerPrint}
+        onClick={this.addFingerPrint}
         style={{
           width: '20rem',
           height: '20rem',
@@ -45,7 +49,7 @@ class FingerPrintPanel extends Component {
         {this.state.prints}
         <p style={{ userSelect: "none" }}>Leave your print</p>
       </div>
-    );
+      </React.Fragment>);
   }
 }
 export default FingerPrintPanel;
