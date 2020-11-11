@@ -171,25 +171,27 @@ code {
    
    .main-section {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: space-around;
+    align-items: wrap;
     flex-grow: 1;
    }
    .contact {
     display:flex;
     flex-wrap: wrap;
-    width: 50vw;
+    width: 20vw;
     max-width: inherit;
-    margin-left:0;
+    margin-left:-10vw;
    }
    .contact-form {
     display:flex;
-    flex-basis:50vw;
+    flex-basis:80vw;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color:#F9FAFA;
     width: 60vw;
     max-width: 50%;
     border-radius: 20px;
+    margin-right: 10vw;
    }
    
    .input-group {
@@ -292,15 +294,22 @@ code {
       cursor: pointer;
       padding: 0;
     }
-    .about-me {
-      text-align:center;
+    .canvas1 {
+      cursor: pointer;
+      padding: 0;
+      overflow: hidden;
     }
+    
     .about-me-center {
       margin: auto;
       width: 50%;
       border: 3px solid #ff3e55;
       padding: 10px;
+      
     }
+    
+    
+    
   
     
     

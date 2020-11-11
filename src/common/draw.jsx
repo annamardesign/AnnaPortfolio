@@ -30,7 +30,7 @@ class DrawingPanel extends Component {
     return <MdBlurOn
               key={this.state.numDrawings} 
               number={this.state.numDrawings} 
-              style={{ left: x, top: y+120, position: "absolute", padding:0, width:"0.5em",  height:"0.5em"}} 
+              style={{ left: x, top: y+250, position: "absolute", padding:0, width:"1rem",  height:"1rem"}} 
               className="drawing" 
             />;
   }

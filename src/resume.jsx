@@ -14,11 +14,14 @@ export default class Resume extends Component {
               < DrawingPanel className="drawing-panel" />
               </main>
               <sidebar className="about-me-center">
+              
                   <img src={ require("./images/Anna.png")} style={{width:"50%"}}/>
+                  <div className="text">
                   <p className="about me">
                   Hi, my name is Anna Marinova and I'm a Front-end Developer who focuses on writing clean, elegant and efficient code.<br></br>
                   I have Professional Degree in Web Design from NET IT Ltd. Web Academy. <br></br>
                   My superpowers are <span style={{color:"#ff3e55"}}>HTML5, CSS, JavaScript, React</span>. I love to draw digitally and make mosaics on the side. </p>
+                  </div>
               </sidebar>
               
             </div> </React.Fragment>
