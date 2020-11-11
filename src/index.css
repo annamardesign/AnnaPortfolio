@@ -302,11 +302,21 @@ code {
     
     .about-me-center {
       margin: auto;
+      margin-top:3rem;
       width: 50%;
       border: 3px solid #ff3e55;
       padding: 10px;
-      
+     
     }
+    .text {
+     display: block;
+     text-align: left;
+     text-align: start;
+     justify-content: right;
+     font-size: 1.4rem;
+    }
+      
+     
     
     
     

@@ -15,17 +15,17 @@ h3 {
 		
 	background-repeat: repeat-x;
 	background-position: 
-		0 20%,
-		0 100%,
-		0 50%,
-		0 100%,
-		0 0;
+     0 20%,
+     0 100%,
+     0 50%,
+     0 100%,
+     0 0;	
 	background-size: 
-		2500px,
-		800px,
-		500px 200px,
-		1000px,
-		400px 260px;
+	 2500px,
+	 800px,
+	 500px 200px,
+	 1000px,
+	 400px 260px;
 	animation: 50s para infinite linear;
 	}
 
