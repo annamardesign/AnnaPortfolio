@@ -7,6 +7,7 @@
     display:flex;
     position:sticky;
     flex-direction: row;
+    flex: flex-end;
     background-color: #021D44;
     width: 100%;
     margin: 0;
@@ -14,17 +15,9 @@
      
   }
   
-  .logo {
-    display: flex;
-    align-items: center;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0.87rem 1rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-right: auto;
-  }
-  .topnav .navli {
+
+
+  .topnav .navli  {
    position: relative;
 	 display: inline-block;
    margin: 1rem 1.5rem;
