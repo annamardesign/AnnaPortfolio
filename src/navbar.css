@@ -185,6 +185,13 @@
       -moz-transition: top 0.3s;
       transition: top 0.3s;
      }
+
+     .icon {
+      bottom: 0;
+      right: 1rem;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
    
 }  
   

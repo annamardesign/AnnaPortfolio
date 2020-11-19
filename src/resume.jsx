@@ -15,7 +15,7 @@ export default class Resume extends Component {
               </main>
               <section className="about-me-center">
               
-                  <img src={ require("./images/Anna.png")} style={{width:"50%"}}/>
+                  <img src={ require("./images/Anna.png")} style={{width:"50%"}} className="me"/>
                   <div className="text">
                   <p> Hi, my name is Anna Marinova and I'm a Front-end Developer who focuses on writing clean, elegant and efficient code.</p>
                   <p> I have Professional Degree in Web Design from NET IT Ltd. Web Academy. My superpowers are <span style={{color:"#ff3e55"}}>HTML5, CSS, JavaScript, React</span>.</p>
