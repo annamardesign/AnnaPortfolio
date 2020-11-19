@@ -52,8 +52,6 @@ const NavBar = () => {
     <li className='nav-item'>
     <NavLink to="/contact" className="navli" activeClassName="active" onClick={closeMobileMenu}>Contact</NavLink>
     </li>
-    </ul>
-    <ul className="social-container">
     <li className="icon"><a href="https://www.twitter.com/annamardesign" className="social" activeclassname="active"><FiTwitter /></a></li>
     <li className="icon"><a href="https://www.github.com/annamardesign" className="social" activeclassname="active"><FiGithub /></a></li>
     <li className="icon"><a href="https://www.behance.net/AnnaMarino" className="social" activeclassname="active"><RiBehanceLine /></a></li>

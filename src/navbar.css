@@ -191,13 +191,13 @@
       padding: 0.9rem;
       font-size: 1.8rem;
       cursor: pointer;
-    }
+     }
     .logo {
       position: absolute;
       top: 0;
       left: 0;
 
-    }
+     }
   }
 
   @media screen and (min-width: 740px) and (max-width: 960px) {
@@ -265,7 +265,7 @@
      .icon {
       bottom: 0;
       right: 1rem;
-      padding: 2rem;
+      padding: 0.9rem;
       font-size: 1.8rem;
       cursor: pointer;
     }
@@ -345,7 +345,7 @@
  .icon {
   bottom: 0;
   right: 1rem;
-  padding: 2rem;
+  padding: 0.9rem;
   font-size: 1.8rem;
   cursor: pointer;
 }
