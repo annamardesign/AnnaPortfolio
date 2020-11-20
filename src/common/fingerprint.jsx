@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { GiFingerPrint } from "react-icons/gi";
+import './btn.css'
 class FingerPrintPanel extends Component {
   constructor(props) {
     super(props);
@@ -34,17 +35,10 @@ class FingerPrintPanel extends Component {
   render() {
     
     return (<React.Fragment>
-      <button onClick={this.deletePrint} style={{borderRadius:"50%", width:"3rem", height:"3rem"}}>Clear</button>
+      <button onClick={this.deletePrint} className = "round">Clear</button>
       <div
-        className="canvas"
+        className="canvas-fingerprint"
         onClick={this.addFingerPrint}
-        style={{
-          width: '20rem',
-          height: '20rem',
-          borderRadius: '50%',
-          overflow: 'hidden',
-          backgroundColor: '#222222'
-        }}
       >
         {this.state.prints}
         <p style={{ userSelect: "none" }}>Leave your print</p>

@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import { MdBlurOn } from "react-icons/md";
+import './btn.css';
+
 
 class DrawingPanel extends Component {
   constructor(props) {
@@ -38,17 +40,10 @@ class DrawingPanel extends Component {
   render() {
     
     return (<React.Fragment>
-      <button onClick={this.deleteDrawing} style={{borderRadius:"50%", width:"3rem", height:"3rem"}}>Clear</button>
+      <button onClick={this.deleteDrawing} className="round">Clear</button>
       <div 
-        className="canvas1"
+        className="canvas-drawing"
         onMouseMove={this.addDrawing}
-        style={{
-          width: '28rem',
-          height: '28rem',
-          borderRadius: '50%',
-          overflow: 'hidden',
-          backgroundColor: '#222222'
-        }}
       >
         {this.state.drawing}
         <p style={{ userSelect: "none" }}>Draw</p>

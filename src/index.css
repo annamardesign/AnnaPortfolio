@@ -131,7 +131,7 @@ code {
    }
    
    .contact-text {
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: bold;
     margin: 0;
     color: #ff3e55;
@@ -181,6 +181,16 @@ code {
    }
 
     /* RESUME CSS */
+    .background-section {
+     position: absolute;
+     top: 200px;
+     width: 100%;
+     z-index: -1;
+     -webkit-box-pack: start;
+     -webkit-justify-content: flex-start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+    }
     .create {
       display:flex;
       flex-basis:50vw;
@@ -192,21 +202,33 @@ code {
       padding:0;
      
     }
-    .drawing-panel {
-      display:flex;
-      z-index: -1;
-      flex-basis: 10vw;
-   
-    }
-    .canvas {
-      cursor: pointer;
-      padding: 0;
-    }
-    .canvas1 {
+
+    .canvas-drawing {
+      width: 28rem;
+      height: 28rem;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #222222;
       cursor: pointer;
       padding: 0;
       overflow: hidden;
     }
+
+    .canvas-fingerprint {
+      cursor: pointer;
+      padding: 0;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #222222;
+    }
+    .drawing-panel .fingerprint-panel {
+      display:block;
+      z-index: -1;
+      flex-basis: 5vw;
+     }
+    
     
     .about-me-center {
       background-color:#222222;
@@ -234,10 +256,31 @@ code {
     }
     @keyframes animation {
       100%{
-       background-position:0px -3000px;
+       background-position: 0px-3000px;
      }
    }
+    @media screen and (max-width: 991px) {
 
+    .about-me-center {
+     width: 100%;
+     }
+
+    .canvas-drawing {
+     cursor: pointer;
+     padding: 0;
+     width: 20rem;
+     height: 20rem;
+     border-radius: 50%;
+     overflow: hidden;
+     background-color: #222222;
+    }
+    
+    }
+    @media(min-width: 901px) {
+
+      
+      }
+  
    
 
     
