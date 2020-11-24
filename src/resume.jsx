@@ -25,8 +25,8 @@ export default class Resume extends Component {
                   <li className="icon"><Link to="/files/myfile.pdf" className="social" activeclassname="active" style={{fontSize:"1.2rem"}} target="_blank" download>Download CV</Link></li>
                   </ul>
                   <div className="text">
-                  <p> Hi, my name is Anna Marinova and I'm a Front-end Developer who focuses on writing clean, elegant and efficient code.</p>
-                  <p> I have Professional Degree in Web Design from NET IT Ltd. Web Academy. My superpowers are <span style={{color:"#ff3e55"}}>HTML5, CSS, JavaScript, React</span>.</p>
+                  <p> Hi, I'm Anna Marinova and the main area of my expertise is front end development. </p>
+                  <p> Coding interactive layouts, animations and building web apps with <span style={{color:"#ff3e55"}}>HTML5, CSS, JavaScript, React</span> has become my passion.</p>
                   <p> I love to draw digitally and make mosaics on the side. </p>
                   </div>
               </section>

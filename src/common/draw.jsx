@@ -8,12 +8,14 @@ class DrawingPanel extends Component {
     super(props);
     this.state = {
       numDrawings: 0,
-      drawing:[]
+      drawing:[],
+      title: "Draw"
     };
   }
   
 
   addDrawing = (e) => {
+    this.hideTitle(e);
     this.setState({
       numDrawings: this.state.numDrawings + 1
     });
@@ -27,12 +29,16 @@ class DrawingPanel extends Component {
   deleteDrawing = (e) => {
    this.setState({ drawing: [] });
   }
+  
+  hideTitle = (e) => {
+    this.setState({ title: "" });
+  }
 
   generateDrawing(x, y) {
     return <MdBlurOn
               key={this.state.numDrawings} 
               number={this.state.numDrawings} 
-              style={{ left: x, top: y+250, position: "absolute", padding:0, width:"1rem",  height:"1rem"}} 
+              style={{ left: x, top: y+90, position: "absolute", padding:0, width:"1rem",  height:"1rem"}} 
               className="drawing" 
             />;
   }
@@ -46,7 +52,7 @@ class DrawingPanel extends Component {
         onMouseMove={this.addDrawing}
       >
         {this.state.drawing}
-        <p style={{ userSelect: "none" }}>Draw</p>
+        <p style={{ userSelect: "none", margin:"5rem auto", textAlign:"center" }}>{this.state.title}</p>
       </div>
       </React.Fragment>);
   }

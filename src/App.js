@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Redirect, Switch} from "react-router-dom";
 import NavBar from "./navbar";
 import Logo from "./logo";
-import Resume from "./resume";
+import Herosection from "./herosection";
 import Projects from "./projects";
 import Freebies from "./freebies";
 import Contact from "./contact";
@@ -17,7 +17,7 @@ function App() {
     <main className="container">
       <Switch>
       <Route path="/logo" component={Logo}/>
-      <Route path="/resume" component={Resume}/>
+      <Route path="/resume" component={Herosection}/>
       <Route path="/projects" component={Projects}/>
       <Route path="/freebies" component={Freebies}/>
       <Route path="/contact" component={Contact}/>
