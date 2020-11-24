@@ -25,160 +25,6 @@ code {
 }
 
 
- /* SOCIAL MEDIA */ 
-   .social-container {
-    background: #021D44;
-    margin-right: 1rem;
-    position: relative;
-	  display: inline-block;
-    padding: 0 1rem;
-	  outline: none;
-	  color: #F9FAFA;
-    text-decoration: none;
-    line-height: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    }
-  
-    a.social {
-      justify-content: space-between;
-      margin-left: 1rem;
-      color: #FFFFFF;
-      
-    }
-
-    .menu-icon {
-      color: #fff;
-      font-size: 2rem;
-    }
-
-    
-    a.social:hover {
-    transform: translateY(-2px);
-    color: #888;
-    transition: color 0.5s;
-    }
-   
-    .icon {
-    display: inline-block;
-    align-items: center;
-    justify-content: space-between;
-    -webkit-transition: all 150ms linear;
-    -moz-transition: all 150ms linear;
-    -ms-transition: all 150ms linear;
-    -o-transition: all 150ms linear;
-    transition: all 150ms linear;
-    line-height: 1;
-    font-size: 1.5rem;
-    margin-bottom: 0;
-    color: #FFFFFF;
-    }
-
-    
-   /* CONTACT CSS */
-   
-   .main-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: wrap;
-    flex-grow: 1;
-   }
-   .contact {
-    display:flex;
-    flex-wrap: wrap;
-    width: 20vw;
-    max-width: inherit;
-    margin-left:-10vw;
-   }
-   .contact-form {
-    display:flex;
-    flex-basis:80vw;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color:#F9FAFA;
-    width: 60vw;
-    max-width: 50%;
-    border-radius: 20px;
-    margin-right: 10vw;
-   }
-   
-   .input-group {
-    margin-bottom:-1rem;
-    display: block;
-    flex-direction: column;
-    flex: 1;
-   
-   }
-   .input-group:last-child {
-    margin-bottom: 0;
-   }
-   .input-group label {
-    display:block;
-    margin-bottom: 0rem;
-   }
-   .input-group .form-input {
-    outline:none;
-    background: none;
-    background-color: transparent;
-    border:1px solid #808080;
-    font-size: 1em;
-    padding: 0.5em;
-    color: inherit;
-    border-radius: 0.9em;
-   }
-   .input-group .form-input:focus {
-    border-color:#1762a7;
-   }
-   
-   .contact-text {
-    font-size: 3vw;
-    font-weight: bold;
-    margin: 0;
-    color: #ff3e55;
-    margin: 0;
-    
-   }
-   .send-btn {
-    color:white;
-    background-color:#ff3e55;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-size: 0.9rem;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-  }
-   .send-btn:hover {
-    background-color:#ff3e59;
-  }
-   .send-btn:focus{
-    background-color:#ff3e55;
-   }
-
-   .form-control {
-     resize: none;
-     outline: none;
-     overflow: auto;
-     flex: 1;
-     font-size: 1em;
-     padding: 0.8em;
-     border-radius: 0.9em;
-     border-color:#808080;
-   }
-   .form-control:focus {
-    border-color:#1762a7;
-   }
-  
-   
-   @media(max-width: 900px) {
-   .page {
-    flex-direction: column;
-    justify-content: center;
-    }
-   }
 
     /* RESUME CSS */
     .background-section {
@@ -191,6 +37,7 @@ code {
      -ms-flex-pack: start;
      justify-content: flex-start;
     }
+
     .create {
       display:flex;
       flex-basis:50vw;
@@ -223,6 +70,7 @@ code {
       overflow: hidden;
       background-color: #222222;
     }
+
     .drawing-panel .fingerprint-panel {
       display:block;
       z-index: -1;
@@ -254,6 +102,9 @@ code {
      perspective-origin: 50% 50%;
      animation: animation 100s linear infinite;
     }
+
+
+    
     @keyframes animation {
       100%{
        background-position: 0px-3000px;

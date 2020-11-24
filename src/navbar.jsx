@@ -6,12 +6,14 @@ import { RiBehanceLine} from 'react-icons/ri';
 import { FiCodepen } from 'react-icons/fi';
 import { VscThreeBars } from 'react-icons/vsc';
 import { TiTimes } from 'react-icons/ti';
+import ReactTooltip from 'react-tooltip';
 import Logo from './logo.jsx';
 import "./navbar.css";
 
 const NavBar = () => {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -24,6 +26,7 @@ const NavBar = () => {
           }
       }
   
+
       useEffect(() => {
           showButton()
            window.addEventListener('resize', showButton);
@@ -31,6 +34,7 @@ const NavBar = () => {
              window.removeEventListener('resize', showButton))
             
       },[]);
+
   
     return (<React.Fragment>
     <div className="navbar">
@@ -49,13 +53,14 @@ const NavBar = () => {
     <li className='nav-item'>
     <NavLink to="/freebies" className="navli" activeClassName="active" onClick={closeMobileMenu}>Freebies</NavLink>
     </li>
-    <li className='nav-item'>
-    <NavLink to="/contact" className="navli" activeClassName="active" onClick={closeMobileMenu}>Contact</NavLink>
-    </li>
-    <li className="icon"><a href="https://www.twitter.com/annamardesign" className="social" activeclassname="active"><FiTwitter /></a></li>
-    <li className="icon"><a href="https://www.github.com/annamardesign" className="social" activeclassname="active"><FiGithub /></a></li>
-    <li className="icon"><a href="https://www.behance.net/AnnaMarino" className="social" activeclassname="active"><RiBehanceLine /></a></li>
-    <li className="icon"><a href="https://www.codepen.io/annamardesigns/pens/" className="social" activeclassname="active"><FiCodepen /></a></li>
+    <li className="icon"><a href="https://www.twitter.com/annamardesign" data-tip="twitter" data-for='twitter' className="social" activeclassname="active"><FiTwitter /></a></li>
+    <ReactTooltip id="twitter" place="bottom" data-offset="{'place': 'left'}" type="light" effect="solid"/>
+    <li className="icon"><a href="https://www.github.com/annamardesign" data-tip="git" data-for='git' className="social" activeclassname="active"><FiGithub /></a></li>
+    <ReactTooltip id="git" place="bottom" data-offset="{'place': 'left'}" type="light" effect="solid"/>
+    <li className="icon"><a href="https://www.behance.net/AnnaMarino" data-tip="behance" data-for='behance' className="social" activeclassname="active"><RiBehanceLine /></a></li>
+    <ReactTooltip id="behance" place="bottom" data-offset="{'place': 'left'}" type="light" effect="solid"/>
+    <li className="icon"><a href="https://www.codepen.io/annamardesigns/pens/" data-tip="codepen" data-for='codepen' className="social" activeclassname="active"><FiCodepen /></a></li>
+    <ReactTooltip id="codepen" place="bottom" data-offset="{'place': 'left'}" type="light" effect="solid"/>
     </ul>
   </div>
 </div></React.Fragment>  );

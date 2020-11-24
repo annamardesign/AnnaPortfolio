@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './contact.css';
 class Contact extends Component {
     constructor(props) {
      super(props);
@@ -34,7 +35,6 @@ class Contact extends Component {
             <div className="contact"><p className="contact-text">Contact me</p></div>
          <form className="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="input-group">
-           <label htmlFor="name" >Name:</label>
            <input type="text"
             placeholder="Your Name"
             className="form-input" 
