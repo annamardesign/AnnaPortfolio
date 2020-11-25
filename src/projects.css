@@ -1,55 +1,50 @@
 
 /* PROJECTS CSS */ 
-.page {
-display: flex;
-align-items: stretch;
-justify-content: space-between;
-flex-grow: 1;
-padding: 60px;
-text-align: center;
-background: #021D44;
-color: white;
-font-size: 1.8vw;
-margin: 0 auto;
-animation: show 500ms ease-out forwards;
-animation-delay: 240ms;
-opacity: 0;
+
+
+.grid-wrap {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1;
 }
 
-@-webkit-keyframes show {
-0%   { opacity: 0; }
-100% { opacity: 1; }
-}
-@-moz-keyframes show {
-0%   { opacity: 0; }
-100% { opacity: 1; }
-}
-@-o-keyframes show {
-0%   { opacity: 0; }
-100% { opacity: 1; }
-}
-@keyframes show {
-0%   { opacity: 0; }
-100% { opacity: 1; }
-}
+.thumb-container {
+  position: absolute;
+  left: 20rem;
+  top: 20rem;
+  justify-content: center;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+ }
 
+.filter-button-container {
+  position: absolute;
+  left: 35rem;
+  top: 10rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #021D44;
+  height: 10rem;
+ }
 
 .toggle-btn {
-display:inline-block;
-padding:0.35em 1.2em;
-border:0.1em solid #FFFFFF;
-margin:0 0.3em 0.3em 0;
-border-radius:0.12em;
-font-weight:300;
-color:#ff3e55;
-text-align:center;
-text-decoration: none;
-font-size: 0.9vw;
-transition: all 0.2s;
-width: 9vw;
-height: 9vw;
-cursor:pointer;
-background-color:#021D44;
+ display:inline-block;
+ padding:0.35em 1.2em;
+ border:0.1em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.12em;
+ font-weight:300;
+ color:#ff3e55;
+ text-align:center;
+ text-decoration: none;
+ font-size: 0.9vw;
+ transition: all 0.2s;
+ width: 9vw;
+ height: 9vw;
+ cursor:pointer;
+ background-color:#021D44;
 }
 
 .toggle-btn-active {
@@ -75,14 +70,43 @@ color:#021D44;
 background-color:#FFFFFF;
 border:0.1em solid #FFFFFF;
 }
+
+
 @media all and (max-width: 800px){
+
+
+.thumb-container {
+  position: absolute;
+  left: 0rem;
+  top: 15rem;
+  justify-content: center;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .project {
+   width: 80vw;
+ }
+  
+.filter-button-container {
+  position: absolute;
+  left: 5rem;
+  top: 10rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #021D44;
+  height: 10rem;
+ }
+
 .toggle-btn {
- display:inline-block;
+ display: inline-block;
  margin:0;
  width: 16vw;
  height: 16vw;
- font-size: 2vw;
+ font-size: 2.5vw;
  }
+
  .toggle-btn-active {
  display:inline-block;
  padding:0.35em 1.2em;
@@ -94,28 +118,14 @@ border:0.1em solid #FFFFFF;
  color:#ff3e55;
  text-align:center;
  text-decoration: none;
- font-size: 2vw;
+ font-size: 2.8vw;
  transition: all 0.2s;
  width: 16vw;
  height: 16vw;
  cursor:pointer;
  background-color:#FFFFFF;
  }
-}
-.thumb-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.filter-button-container {
-  display: flex;
-  flex-direction: wrap;
-  margin-top: 3rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #021D44;
-  height: 10rem;
+
 }
 
 

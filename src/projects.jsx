@@ -28,25 +28,27 @@ export default class Projects extends Component {
     : projectsData;
     return (
       <div className="page">
-        <div className="filter-button-container">
-      <ListGroup 
-      items={this.state.category} 
-      selectedItem={this.state.selectedCategory}
-      onItemSelect={this.handleCategorySelect}
-      />
-      </div>
-     <div className = "thumb-container">
-      {filtered.map(projectsData => (
-        <Thumbnail
+        <div className="grid-wrap">
+         <div className="filter-button-container">
+          <ListGroup 
+           items={this.state.category} 
+           selectedItem={this.state.selectedCategory}
+           onItemSelect={this.handleCategorySelect}
+          />
+         </div>
+        <div className = "thumb-container">
+         {filtered.map(projectsData => (
+         <Thumbnail className="thumbnail"
             key={projectsData.id}
             link={projectsData.link}
             image={projectsData.image}
             title={projectsData.title}
             category={projectsData.category}
-      />
-      ))}
-    </div>
+         />
+         ))}
+       </div>
       </div>
+    </div>
     )
   } 
   

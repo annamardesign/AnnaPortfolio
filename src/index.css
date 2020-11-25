@@ -18,6 +18,33 @@ body {
  
 }
 
+.page {
+  background: #021D44;
+  color: white;
+  font-size: 1.8vw;
+  margin: 0 auto;
+  animation: show 500ms ease-out forwards;
+  animation-delay: 240ms;
+  opacity: 0;
+  }
+  
+  @-webkit-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @-moz-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @-o-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

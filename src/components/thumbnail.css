@@ -4,10 +4,18 @@
     box-sizing: border-box;
 }
 .project {
-    width:30rem;
+    width: 60vw;
     height: auto;
     background-color:#ff3e55;
     border-radius: 0.5rem;
     margin: 1.5rem;
   
+}
+
+.project-title {
+    font-size: 4vw;
+}
+
+.project-category {
+    font-size: 2vw;
 }
