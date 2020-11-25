@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { GiFingerPrint } from "react-icons/gi";
-import './btn.css'
+
 class FingerPrintPanel extends Component {
   constructor(props) {
     super(props);

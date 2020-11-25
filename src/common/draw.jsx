@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { MdBlurOn } from "react-icons/md";
-import './btn.css';
+
 
 
 class DrawingPanel extends Component {
