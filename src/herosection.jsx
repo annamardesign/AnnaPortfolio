@@ -15,17 +15,18 @@ const Herosection = () => {
     <aside className="aside">
      <img src={ require("./images/Anna.png")} alt="Anna Marinova" className="me"/>
       <ul className="links-wrapper">
+        <li className="cv"><Link to="/files/myfile.pdf" style={{fontSize:"1.2rem"}} target="_blank" download>Download CV</Link></li>
         <li className="email"><span data-tip="Send me an email" data-for='myemail'><Email/></span></li>
         <ReactTooltip id="myemail" place="bottom" data-event="click" data-offset="{'place': 'left'}" type="light" effect="solid"/>
-        <li className="cv"><Link to="/files/myfile.pdf" style={{fontSize:"1.2rem"}} target="_blank" download>Download CV</Link></li>
      </ul>
     </aside>
     <article className="article">
     <h4>About me</h4>
     <div className="about-me">
-     <p>Hi, I'm Anna Marinova and the main area of my expertise is front end development. </p>
+     <p> Hi, I'm Anna Marinova and the main area of my expertise is front end development. </p>
      <p> Coding interactive layouts, animations and building web apps with <span style={{color:"#ff3e55"}}>HTML5, CSS, JavaScript, React</span> has become my passion.</p>
      <p> I love to draw digitally and make mosaics on the side. </p>
+     
     </div>
       <div className="flex-wrapper">
         <span><FingerPrintPanel /></span>
