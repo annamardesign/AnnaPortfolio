@@ -28,7 +28,7 @@ export default class Projects extends Component {
     : projectsData;
     return (
       <div className="page">
-        <div className="grid-wrap">
+        <div className="flex-wrap">
          <div className="filter-button-container">
           <ListGroup 
            items={this.state.category} 
@@ -44,6 +44,7 @@ export default class Projects extends Component {
             image={projectsData.image}
             title={projectsData.title}
             category={projectsData.category}
+            year={projectsData.year}
          />
          ))}
        </div>

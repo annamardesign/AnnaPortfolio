@@ -4,7 +4,8 @@ export const projectsData = [
       image: "",
       title: "First",
       category: "Web",
-      id: "1"
+      id: "1",
+      year:"2020"
     },
 
     {
@@ -12,14 +13,16 @@ export const projectsData = [
       image: "",
       title: "Second",
       category: "Illustration", 
-      id: "2"
+      id: "2",
+      year:"2019"
     },
     {
         link: "",
         image: "",
         title: "Third",
         category: "Illustration", 
-        id: "3"
+        id: "3",
+        year:"2019"
       }
 ];
 

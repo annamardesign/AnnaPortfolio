@@ -2,7 +2,7 @@
 /* PROJECTS CSS */ 
 
 
-.grid-wrap {
+.flex-wrap {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -48,28 +48,30 @@
 }
 
 .toggle-btn-active {
-display:inline-block;
-padding:0.35em 1.2em;
-border:none;
-margin:0 0.3em 0.3em 0;
-border-radius:0.12em;
-text-decoration:none;
-font-weight:500;
-color:#ff3e55;
-text-align:center;
-text-decoration: none;
-font-size: 1vw;
-transition: all 0.2s;
-width: 9vw;
-height: 9vw;
-cursor:pointer;
-background-color:#FFFFFF;
+ display:inline-block;
+ padding: 0.35em 1.2em;
+ border: none;
+ margin: 0 0.3em 0.3em 0;
+ border-radius: 0.12em;
+ text-decoration: none;
+ font-weight: 500;
+ color:#ff3e55;
+ text-align: center;
+ text-decoration: none;
+ font-size: 1vw;
+ transition: all 0.2s;
+ width: 9vw;
+ height: 9vw;
+ cursor:pointer;
+ background-color:#FFFFFF;
 }
 .toggle-btn:hover {
-color:#021D44;
-background-color:#FFFFFF;
-border:0.1em solid #FFFFFF;
+ color:#021D44;
+ background-color:#FFFFFF;
+ border:0.1em solid #FFFFFF;
 }
+
+
 
 
 @media all and (max-width: 800px){
@@ -108,22 +110,22 @@ border:0.1em solid #FFFFFF;
  }
 
  .toggle-btn-active {
- display:inline-block;
- padding:0.35em 1.2em;
- border:none;
- margin:0 0.3em 0.3em 0;
- border-radius:0.12em;
- text-decoration:none;
- font-weight:500;
- color:#ff3e55;
- text-align:center;
- text-decoration: none;
- font-size: 2.8vw;
- transition: all 0.2s;
- width: 16vw;
- height: 16vw;
- cursor:pointer;
- background-color:#FFFFFF;
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:none;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  text-decoration:none;
+  font-weight:500;
+  color:#ff3e55;
+  text-align:center;
+  text-decoration: none;
+  font-size: 2.8vw;
+  transition: all 0.2s;
+  width: 16vw;
+  height: 16vw;
+  cursor:pointer;
+  background-color:#FFFFFF;
  }
 
 }
