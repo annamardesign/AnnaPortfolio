@@ -10,7 +10,7 @@ export const projectsData = [
 
     {
       link: "",
-      image: "",
+      image: require("../images/Fashion-illustration-min.png"),
       title: "Second",
       category: "Illustration", 
       id: "2",

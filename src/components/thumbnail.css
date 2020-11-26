@@ -18,6 +18,7 @@
     background-color:#ff3e55;
     border-radius: 0.5rem;
     margin: 0.5rem  0.5rem;
+    z-index: -1;
   
 }
 
@@ -38,6 +39,7 @@ a {
     margin-left: 7rem;
     padding: 0.5rem;
     text-align: center;
+    z-index: 1;
 }
 
 
@@ -45,13 +47,29 @@ a {
    font-family: 'Big Shoulders Inline Text', cursive;
 }
 
+ 
 .project-cover {
-    display: block;
-    width: 100%;
-    opacity: 0;
-    border-radius: 50%;
-    transition: cubic-bezier(.39,.575,.565,1);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 0;
+    -ms-transform: translateY(-47.5%);
+    transform: translateY(-47.5%);
+    transition: .3s ease;
+    pointer-events: none;
+    display: none;
 }
+
+.project:hover .project-cover {
+    display: block;
+    width: 20vw;
+  }
+
+  .project:hover .project-title {
+    z-index: 100;
+  }
 
 .project-category  {
     grid-row-start: 1;
