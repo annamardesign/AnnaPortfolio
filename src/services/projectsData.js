@@ -1,7 +1,7 @@
 export const projectsData = [
     {
       link: "",
-      image: "",
+      image: require("../images/web-test.png"),
       title: "First",
       category: "Web",
       id: "1",
