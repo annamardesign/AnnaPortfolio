@@ -54,7 +54,7 @@ a {
 .project-cover {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -4rem;
     left: -4rem;
     z-index: -100;
     margin: 0 auto;

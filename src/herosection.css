@@ -138,6 +138,51 @@ body {
     width: 100%;
   }
 
+  .links-wrapper li {
+   animation-name: fadeIn, slideUp;
+   animation-delay: 2s;
+   animation-duration: 2s;
+   animation-timing-function: cubic-bezier(.165, .84, .44, 1);
+   animation-fill-mode: forwards;
+   opacity: 0;
+
+  }
+
+  .aside img {
+   width: 20vw;
+   animation-name: fadeIn, slideUp;
+   animation-duration: 2s;
+   animation-timing-function: cubic-bezier(.165, .84, .44, 1);
+   animation-fill-mode: forwards;
+   opacity: 0;
+  }
+
+  .article div  {
+   animation-name: fadeIn, slideUp;
+   animation-duration: 2s;
+   animation-timing-function: cubic-bezier(.165, .84, .44, 1);
+   animation-fill-mode: forwards;
+   opacity: 0;
+  }
+  @keyframes slideUp {
+  0% {
+   transform: rotateX(-20deg) translateY(35px);
+  }
+  100% {
+   transform: rotateX(0) translateY(0);
+  }
+ }
+  @keyframes fadeIn {
+    0% {
+     opacity: 0;
+    }
+     100% {
+      opacity: 1;
+       }
+  }
+
+  
+
   .round {
     border-radius: 50%;
     outline: none;

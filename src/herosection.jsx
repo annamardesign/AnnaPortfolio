@@ -21,11 +21,10 @@ const Herosection = () => {
      </ul>
     </aside>
     <article className="article">
-    <h4>About me</h4>
     <div className="about-me">
-     <p> Hi, I'm Anna Marinova and the main area of my expertise is front end development. </p>
-     <p> Coding interactive layouts, animations and building web apps with <span style={{color:"#ff3e55"}}>HTML5, CSS, JavaScript, React</span> has become my passion.</p>
-     <p> I love to draw digitally and make mosaics on the side. </p>
+     <p class-name="intro-line"> Hi, I'm Anna Marinova and the main area of my expertise is front end development. </p>
+     <p class-name="intro-line"> Coding interactive layouts, animations and building web apps with <span style={{color:"#ff3e55"}}>HTML5, CSS, JavaScript, React</span> has become my passion.</p>
+     <p class-name="intro-line"> I love to draw digitally and make mosaics on the side. </p>
      
     </div>
       <div className="flex-wrapper">
