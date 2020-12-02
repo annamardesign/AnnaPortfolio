@@ -1,0 +1,21 @@
+.back-btn {
+    border-radius: 50%;
+    outline: none;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ff3e55;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.back-btn.active {
+    background-color:#3e8e41;
+}
+   
+.back-btn:hover,
+.back-btn:focus {
+    outline: none;
+    cursor: pointer;
+    background-color: #3e8e41;
+}
+    

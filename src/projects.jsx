@@ -25,7 +25,7 @@ export default class Projects extends Component {
   }
 
   render() {
-    const { selectedCategory, projects:projectsData, getRoutes } = this.state;
+    const { selectedCategory, projects:projectsData } = this.state;
     const filtered = selectedCategory && selectedCategory.id ? 
     projectsData.filter(p => p.category === selectedCategory.name) : projectsData;
     return (
