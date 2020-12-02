@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import FilterList from './filterList.jsx';
 import ListGroup from './common/ListGroup.jsx';
 import Thumbnail from './components/thumbnail.jsx';
 import { projectsData } from './services/projectsData.js';
@@ -21,11 +20,14 @@ export default class Projects extends Component {
     this.setState({selectedCategory: category});
   }
 
+  thumbnails = {
+
+  }
+
   render() {
-    const { selectedCategory, projects:projectsData } = this.state;
+    const { selectedCategory, projects:projectsData, getRoutes } = this.state;
     const filtered = selectedCategory && selectedCategory.id ? 
-    projectsData.filter(p => p.category === selectedCategory.name)
-    : projectsData;
+    projectsData.filter(p => p.category === selectedCategory.name) : projectsData;
     return (
       <div className="page">
         <div className="flex-wrap">
@@ -36,21 +38,21 @@ export default class Projects extends Component {
            onItemSelect={this.handleCategorySelect}
           />
          </div>
-        <div className = "thumb-container">
-         {filtered.map(projectsData => (
-         <Thumbnail className="thumbnail"
-            key={projectsData.id}
-            link={projectsData.link}
-            image={projectsData.image}
-            title={projectsData.title}
-            category={projectsData.category}
-            year={projectsData.year}
-         />
-         ))}
-       </div>
+         <div className = "thumb-container">
+          {filtered.map(projectsData => (
+            <Thumbnail className="thumbnail"
+              key={projectsData.id}
+              id={projectsData.id}
+              url={projectsData.url}
+              image={projectsData.image}
+              title={projectsData.title} 
+              category={projectsData.category}
+              year={projectsData.year}
+              objective={projectsData.objective}
+            >
+            </Thumbnail> ))}
+         </div>
       </div>
     </div>
-    )
-  } 
-  
+    )}
 }

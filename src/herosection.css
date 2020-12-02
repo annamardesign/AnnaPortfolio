@@ -79,6 +79,12 @@ body {
     list-style-type: none;
     justify-content: space-between;
     color: #FFFFFF;
+    animation-name: fadeIn, slideUp;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.165, .84, .44, 1);
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   .links-wrapper li:hover {
@@ -111,18 +117,18 @@ body {
     cursor: pointer;
     }
 
-    .canvas-fingerprint {
-     display: inline-block;
-     height: 20vw;
-     width: 20vw;
-     border-radius: 10%;
-     border: 1px solid #fff;
-     background-color: transparent;
-     flex-grow: 1;
-     margin: 2rem 2rem;
-     box-shadow: 0 4px 10px rgba(60,64,67,.28);
-     cursor: pointer;
-    }
+  .canvas-fingerprint {
+    display: inline-block;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 10%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    flex-grow: 1;
+    margin: 2rem 2rem;
+    box-shadow: 0 4px 10px rgba(60,64,67,.28);
+    cursor: pointer;
+  }
 
   
   h3 {
@@ -138,15 +144,6 @@ body {
     width: 100%;
   }
 
-  .links-wrapper li {
-   animation-name: fadeIn, slideUp;
-   animation-delay: 2s;
-   animation-duration: 2s;
-   animation-timing-function: cubic-bezier(.165, .84, .44, 1);
-   animation-fill-mode: forwards;
-   opacity: 0;
-
-  }
 
   .aside img {
    width: 20vw;
@@ -157,13 +154,22 @@ body {
    opacity: 0;
   }
 
-  .article div  {
+  .article .about-me {
    animation-name: fadeIn, slideUp;
    animation-duration: 2s;
    animation-timing-function: cubic-bezier(.165, .84, .44, 1);
    animation-fill-mode: forwards;
    opacity: 0;
   }
+
+  .article .flex-wrapper {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.165, .84, .44, 1);
+    animation-fill-mode: forwards;
+    opacity: 0;
+   }
+  
   @keyframes slideUp {
   0% {
    transform: rotateX(-20deg) translateY(35px);

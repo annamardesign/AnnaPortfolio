@@ -1,28 +1,34 @@
+
 export const projectsData = [
     {
-      link: "",
+      url: "",
       image: require("../images/web-test.png"),
-      title: "First",
+      title: "First Project",
       category: "Web",
       id: "1",
-      year:"2020"
+      year:"2020",
+      objective: "lala"
     },
 
     {
-      link: "",
+      url: "",
       image: require("../images/Fashion-illustration-min.png"),
-      title: "Second",
+      title: "Second Project",
       category: "Illustration", 
       id: "2",
-      year:"2019"
+      year:"2019",
+      objective: "lala"
+      
     },
     {
-        link: "",
+        url: "",
         image: "",
-        title: "Third",
+        title: "Third Project",
         category: "Illustration", 
         id: "3",
-        year:"2019"
+        year:"2019",
+        objective: "lala"
+        
       }
 ];
 
