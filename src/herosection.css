@@ -164,7 +164,7 @@ body {
 
   .article .flex-wrapper {
     animation-name: fadeIn;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: cubic-bezier(.165, .84, .44, 1);
     animation-fill-mode: forwards;
     opacity: 0;
@@ -200,14 +200,14 @@ body {
    }
    
    .round .active {
-    background-color:#3e8e41;
+    background-color:#00BFFF;
    }
    
    .round:hover,
      .round:focus {
       outline: none;
       cursor: pointer;
-      background-color: #3e8e41;
+      background-color: #00BFFF;
      }
     
 
@@ -283,9 +283,5 @@ body {
      
       .flex-wrapper {
        flex-direction: column;
-      }
-     
-
-    
-     
+      }  
   }

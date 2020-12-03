@@ -7,7 +7,9 @@ export const projectsData = [
       category: "Web",
       id: "1",
       year:"2020",
-      objective: "lala"
+      objective: "Rebuild regionalnorazvitie.com website with React and Contentful as a CMS.",
+      tablet: require("../images/ipad.svg"),
+      mobile: require("../images/iphone.svg")
     },
 
     {
@@ -17,7 +19,9 @@ export const projectsData = [
       category: "Illustration", 
       id: "2",
       year:"2019",
-      objective: "lala"
+      objective: "lala",
+      tablet: require("../images/ipad.svg"),
+      mobile: require("../images/iphone.svg")
       
     },
     {
@@ -27,7 +31,9 @@ export const projectsData = [
         category: "Illustration", 
         id: "3",
         year:"2019",
-        objective: "lala"
+        objective: "lala",
+        tablet: require("../images/ipad.svg"),
+        mobile: require("../images/iphone.svg")
         
       }
 ];

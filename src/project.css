@@ -1,21 +1,121 @@
+
+.project-case-study {
+   display: inline-grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: auto;
+   grid-gap: 1rem;
+   animation-name: fadeIn;
+   animation-delay: 1s;
+   animation-duration: 2s;
+   animation-timing-function: ease;
+   animation-fill-mode: forwards;
+   opacity: 0;
+   overflow-y: scroll;
+}
+.objective {
+   grid-column: 1/2;
+   position: absolute;
+   bottom: 6rem;
+   left: 6rem;
+   letter-spacing: 1px;
+   font-weight: 100;
+   font-size: 1.2vw;
+   margin: 0;
+   text-shadow: 0 2px 16px rgba(0,0,0,.6);
+   color: #fff;
+   width: 20vw;
+}
+.objective-title {
+   letter-spacing: 1px;
+   font-weight: 100;
+   text-shadow: 0 0 1px rgba(255,255,255,0.3);
+   font-size: 1.2vw;
+   color: #ff3e55;
+   text-transform: uppercase;
+   margin-top: 0;
+}
+.project-name {
+   grid-column: 2/4;
+   font-family: 'Big Shoulders Inline Text', cursive;
+   font-size: 4vw;
+   font-weight: 400;
+   margin-left: 2rem;
+   padding: 0.5rem;
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #ff3e55;
+   margin-bottom: 0;
+   text-shadow: 0 2px 40px rgba(0,0,0,.6);
+}
+
+
 .back-btn {
     border-radius: 50%;
+    grid-column: 4/5;
     outline: none;
     width: 3rem;
     height: 3rem;
     background-color: #ff3e55;
     cursor: pointer;
     transition: 0.5s;
+    position: absolute;
+    bottom: 8rem;
+    right: 6rem;
+    margin-top:0;
+}
+
+.project-url {
+    color: #00BFFF;
 }
 
 .back-btn.active {
-    background-color:#3e8e41;
+    background-color:#00BFFF;
 }
    
 .back-btn:hover,
 .back-btn:focus {
     outline: none;
     cursor: pointer;
-    background-color: #3e8e41;
+    background-color: #00BFFF;
 }
+.project-img {
+    position: absolute;
+    width: 30vw;
+    top: -150%;
+    right: -10rem;
+    left: -10rem;
+    z-index: -100;
+    margin: 0 auto;   
+}
+.presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 14rem;
+    margin-top: 35%;
+    position: relative;
+}
+.mobile {
+   grid-column: 1/2;
+   width: 30vw;
+   top: -150%;
+   right: -10rem;
+   left: -10rem;
+   z-index: -100;
+   margin: 0 auto; 
+}
+.tablet {
+   grid-column: 2/3;
+   padding-top: 3rem;
+}
+.container-fluid {
+    
+}
+    
+
+
+
     

@@ -7,14 +7,19 @@ const Project = ({ match, history }) => {
     return (
     <div className="page">
      <article className="project-case-study">
-      <div className="project-title">{project.title}<img src={project.image} className="project-cover" alt={project.title}/></div>
+      <div className="project-name">{project.title}<img src={project.image} className="project-img" alt={project.title}/></div>
        <div className="objective">
-         <h2>Objective{match.params.id}</h2>
+         <h2 className="objective-title">Objective</h2>
          <p>{project.objective}</p>
+         <a href={project.url} className="project-url">Visit web site</a>
        </div>  
-       <a href={project.url} className="project-url"></a>
+       <button className="back-btn" onClick={() => history.push('/projects')}>Back</button>
     </article>
-    <button className="back-btn" onClick={() => history.push('/projects')}>Back</button>
+    
+    <section className="presentation">
+      <img src={project.tablet} className="tablet"></img>
+      <img src={project.mobile} className="mobile"></img>
+    </section>
    </div> ); 
 }
  
