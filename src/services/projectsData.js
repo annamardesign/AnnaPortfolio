@@ -9,7 +9,9 @@ export const projectsData = [
       year:"2020",
       objective: "Rebuild regionalnorazvitie.com website with React and Contentful as a CMS.",
       tablet: require("../images/ipad.svg"),
-      mobile: require("../images/iphone.svg")
+      mobile: require("../images/iphone.svg"),
+      mobileInner: require("../images/iphone.svg"),
+      mobileMore: require("../images/iphone.svg")
     },
 
     {
@@ -21,7 +23,9 @@ export const projectsData = [
       year:"2019",
       objective: "lala",
       tablet: require("../images/ipad.svg"),
-      mobile: require("../images/iphone.svg")
+      mobile: require("../images/iphone.svg"),
+      mobileInner: require("../images/iphone.svg"),
+      mobileMore: require("../images/iphone.svg")
       
     },
     {
@@ -33,7 +37,9 @@ export const projectsData = [
         year:"2019",
         objective: "lala",
         tablet: require("../images/ipad.svg"),
-        mobile: require("../images/iphone.svg")
+        mobile: require("../images/iphone.svg"),
+        mobileInner: require("../images/iphone.svg"),
+        mobileMore: require("../images/iphone.svg")
         
       }
 ];
