@@ -132,21 +132,29 @@
 
 .mobile {
    grid-column: 1/2;
-   width: 30vw;
+   width: 20vw;
    top: -150%;
    right: -10rem;
    left: -10rem;
-   margin: 1rem auto; 
+   margin: 1rem auto;
+   border-radius: 15%/7%; 
+   box-shadow: 0 2px 200px 0 #000, 0 2px 50px 0 #000;
+   pointer-events: none;
 }
 .tablet {
    grid-column: 2/3;
-   padding-top: 3rem;
+   border-radius: 7%/7%;
+   box-shadow: 0 2px 200px 0 #000, 0 2px 50px 0 #000;
+   pointer-events: none;
 }
 
 .mobile-inner {
    grid-column: 1/2;
-   width: 30vw;
+   width: 20vw;
    margin: 1rem auto; 
+   border-radius: 15%/7%;
+   box-shadow: 0 2px 200px 0 #000, 0 2px 50px 0 #000;
+   pointer-events: none;
 }
 
     
