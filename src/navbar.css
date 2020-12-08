@@ -202,11 +202,15 @@
       min-height: 100vh;
     }
   
-    .navli .logo  {
+    .navli   {
       text-align: center;
       margin-right: 2rem;
       width: 100%;
       display: table;
+    }
+
+    .logo {
+      margin-left: -3rem;
     }
   
   

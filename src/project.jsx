@@ -1,6 +1,7 @@
 import React from 'react';
 import { projectsData } from './services/projectsData';
 import { useState, useEffect } from 'react';
+import {TiArrowBackOutline} from 'react-icons/ti';
 import './project.css';
 
 const Project = ({ match, history }) => {
@@ -32,7 +33,7 @@ const Project = ({ match, history }) => {
          <p>{project.objective}</p>
          <a href={project.url} className="project-url">Visit web site</a>
        </div>  
-       <button className="back-btn" onClick={() => history.push('/projects')}>Back</button>
+       <button className="back-btn" onClick={() => history.push('/projects')}><TiArrowBackOutline style={{color:"#fff",fontSize:"2vw"}}/></button>
     </article>
     
     <section className="presentation">

@@ -20,13 +20,14 @@
    margin-left: 2rem;
    padding: 0.5rem;
    text-align: center;
-   top: 50%;
+   top: 65%;
    left: 50%;
    transform: translate(-50%, -50%);
    color: #ff3e55;
    margin-bottom: 0;
    text-shadow: 0 2px 40px rgba(0,0,0,.6);
    z-index: 3;
+   display: block;
 }
 
 .objective {
@@ -99,6 +100,7 @@
     cursor: pointer;
     background-color: #00BFFF;
 }
+
 .project-img {
     position: absolute;
     width: 30vw;
@@ -106,8 +108,9 @@
     right: -10rem;
     left: -15rem;
     z-index: 1;
-    margin: 0 auto;   
+    margin: 5rem auto;   
 }
+
 .presentation {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -141,6 +144,7 @@
    box-shadow: 0 2px 200px 0 #000, 0 2px 50px 0 #000;
    pointer-events: none;
 }
+
 .tablet {
    grid-column: 2/3;
    border-radius: 7%/7%;
@@ -157,22 +161,147 @@
    pointer-events: none;
 }
 
-@media only screen and (max-width: 765px) {
 
+@media screen and (min-width: 1021px) and (max-width: 1366px)  {
+   .project-img {
+      position: absolute;
+      width: 30vw;
+      top: -18rem;
+      right: -10rem;
+      left: -15rem;
+      z-index: 1;
+      margin: 5rem auto;   
+     }
+   
+     .sticky {
+      top: 50%;
+      left: 46%;
+     }
+   
+     .objective {
+      font-size: 2.5vw;
+      width: 40vw;
+     }
+   
+     .objective-title {
+      font-size: 2.5vw;
+     }
+   
+     .presentation {
+      display: block;
+     }
+   
+     .tablet {
+        display: block;
+        width: 30vw;
+        margin: 0 7rem;
+        margin-top: 45rem;  
+     }
+   
+     .mobile {
+        display: block;
+        width: 20vw;
+     }
+   
+     .presentation-mobile {
+        display: block;
+     }
+   
+     .mobile-inner {
+      display: block;
+      width: 20vw;
+      margin-left: 12rem;
+    }
+   
+    .mobile-more {
+      display: block;
+      width: 20vw;
+      margin-left: 8rem;
+    }
+   
+    
+   }
+       
+@media screen and (min-width: 721px) and (max-width: 1020px) {
 
-.sticky {
-   margin: 0 auto;
-   top: 27.5%;
-   left: 47%;
+   .project-img {
+   position: absolute;
+   width: 30vw;
+   top: -18rem;
+   right: -10rem;
+   left: -15rem;
+   z-index: 1;
+   margin: 5rem auto;   
+  }
+
+  .sticky {
+   top: 40%;
+   left: 46%;
+  }
+
+  .objective {
+   font-size: 2.5vw;
+   width: 40vw;
+  }
+
+  .objective-title {
+   font-size: 2.5vw;
+  }
+
+  .presentation {
+   display: block;
+  }
+
+  .tablet {
+     display: block;
+     width: 30vw;
+     margin: 0 7rem;
+     margin-top: 45rem;  
+  }
+
+  .mobile {
+     display: block;
+     width: 20vw;
+  }
+
+  .presentation-mobile {
+     display: block;
+  }
+
+  .mobile-inner {
+   display: block;
+   width: 20vw;
+   margin-left: 12rem;
+ }
+
+ .mobile-more {
+   display: block;
+   width: 20vw;
+   margin-left: 8rem;
+ }
+
+ 
 }
+    
+
+    
+@media all and (min-width: 280px) and (max-width: 720px)  {
+ 
+.sticky {
+   margin: -2rem auto;
+   top: 45vh;
+   left: 47.5%;
+   width: 100%;
+}
+
 
 .objective {
    display: block;
    position: absolute;
-   top: 15rem;
+   top: 5rem;
    left: 1rem;
    width: 90%;
-   margin: 0 auto;
+   margin: 21rem auto;
    text-align: center;
    font-size: 2.2vw;
  }
@@ -188,10 +317,12 @@
    margin: 5rem auto;
    align-items: center;
    justify-content: center;
-   top: 20rem;
-   right: 10rem;
-   margin-top: 0.5rem;
-   margin-bottom: 0.5rem;
+   top: 28rem;
+   left: 5.1rem;
+   margin-top: 3rem;
+   margin-bottom: 2rem;
+   width: 2rem;
+   height: 2rem;
  }
 
  .presentation {
@@ -199,7 +330,7 @@
    position: relative;
    z-index: 4;
    padding: 0;
-   margin-top: 20rem;
+   margin-top: 30rem;
 }
 
  .tablet {
@@ -237,8 +368,4 @@
    left: -100%;
  }
 }
-    
 
-
-
-    
