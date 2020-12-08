@@ -210,7 +210,7 @@
     }
 
     .logo {
-      margin-left: -3rem;
+      margin-left: -5rem;
     }
   
   
@@ -227,7 +227,7 @@
       display: block;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 2rem;
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;

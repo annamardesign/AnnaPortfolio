@@ -1,4 +1,5 @@
 
+
 .project-case-study {
    display: inline-grid;
    grid-template-columns: 1fr 2fr 1fr;
@@ -150,6 +151,7 @@
    border-radius: 7%/7%;
    box-shadow: 0 2px 200px 0 #000, 0 2px 50px 0 #000;
    pointer-events: none;
+   margin-top: 2rem;
 }
 
 .mobile-inner {
@@ -163,6 +165,7 @@
 
 
 @media screen and (min-width: 1021px) and (max-width: 1366px)  {
+
    .project-img {
       position: absolute;
       width: 30vw;
@@ -174,7 +177,7 @@
      }
    
      .sticky {
-      top: 50%;
+      top: 45%;
       left: 46%;
      }
    
@@ -225,102 +228,106 @@
 @media screen and (min-width: 721px) and (max-width: 1020px) {
 
    .project-img {
-   position: absolute;
-   width: 30vw;
-   top: -18rem;
-   right: -10rem;
-   left: -15rem;
-   z-index: 1;
-   margin: 5rem auto;   
-  }
-
-  .sticky {
-   top: 40%;
-   left: 46%;
-  }
-
-  .objective {
-   font-size: 2.5vw;
-   width: 40vw;
-  }
-
-  .objective-title {
-   font-size: 2.5vw;
-  }
-
-  .presentation {
-   display: block;
-  }
-
-  .tablet {
-     display: block;
-     width: 30vw;
-     margin: 0 7rem;
-     margin-top: 45rem;  
-  }
-
-  .mobile {
-     display: block;
-     width: 20vw;
-  }
-
-  .presentation-mobile {
-     display: block;
-  }
-
-  .mobile-inner {
-   display: block;
-   width: 20vw;
-   margin-left: 12rem;
- }
-
- .mobile-more {
-   display: block;
-   width: 20vw;
-   margin-left: 8rem;
- }
-
- 
-}
+      position: absolute;
+      width: 30vw;
+      top: -18rem;
+      right: -10rem;
+      left: -15rem;
+      z-index: 1;
+      margin: 5rem auto;   
+     }
+   
+     .sticky {
+      top: 40%;
+      left: 46%;
+     }
+   
+     .objective {
+      font-size: 2.5vw;
+      width: 40vw;
+     }
+   
+     .objective-title {
+      font-size: 2.5vw;
+     }
+   
+     .presentation {
+      display: block;
+     }
+   
+     .tablet {
+        display: block;
+        width: 30vw;
+        margin: 0 7rem;
+        margin-top: 45rem;  
+     }
+   
+     .mobile {
+        display: block;
+        width: 20vw;
+     }
+   
+     .presentation-mobile {
+        display: block;
+     }
+   
+     .mobile-inner {
+      display: block;
+      width: 20vw;
+      margin-left: 12rem;
+    }
+   
+    .mobile-more {
+      display: block;
+      width: 20vw;
+      margin-left: 8rem;
+    }
+   
     
-
+   }
+       
     
 @media all and (min-width: 280px) and (max-width: 720px)  {
- 
-.sticky {
-   margin: -2rem auto;
-   top: 45vh;
-   left: 47.5%;
-   width: 100%;
-}
 
+.project-img {
+   position: relative;
+   width: 50vw;
+   z-index: 1;
+   top: 3vh;  
+   left: -7vw;
+}
+.sticky {
+   top: 40vh;
+   left: 33vw;
+   width: 100%;
+   position: relative;
+}
 
 .objective {
    display: block;
-   position: absolute;
-   top: 5rem;
-   left: 1rem;
-   width: 90%;
-   margin: 21rem auto;
-   text-align: center;
+   position: relative;
+   top: 60vh;
+   left: 2vw;
+   width: 40vw;
+   text-align: left;
+   justify-content: left;
    font-size: 2.2vw;
  }
 
 
  .objective-title {
+   position: relative;
    font-size: 2.2vw;
  }
 
  .back-btn {
    display: block;
-   position: absolute;
+   position: relative;
    margin: 5rem auto;
    align-items: center;
    justify-content: center;
-   top: 28rem;
-   left: 5.1rem;
-   margin-top: 3rem;
-   margin-bottom: 2rem;
+   top: 50vh;
+   left: 2vw;
    width: 2rem;
    height: 2rem;
  }
