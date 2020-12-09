@@ -163,77 +163,24 @@ a {
         text-align: center;
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 260%;
         transform: translate(-50%, -50%);
         color: #ff3e55;
     }
      
     .project-cover {
-        position: absolute;
-        top: 50%;
-        right: -4rem;
-        left: -4rem;
-        z-index: -100;
-        margin: 0 auto;
-        -ms-transform: translateY(-47.5%);
-        transform: translateY(-47.5%);
-        transition: .3s ease;
-        pointer-events: none;
         display: none;
     }
     
     
     .project-category  {
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        font-size: 2vw;
-        opacity: 0;
-        transform: translateX(-4px) rotateX(-12deg);
-        -ms-transform-origin: left bottom;
-        transform-origin: left bottom;
-        transition: .3s cubic-bezier(.23,1,.32,1); 
-        margin-top: 3rem;
-        margin-left: 0.5rem;
-        color: #ff3e55;
+        display: none;
     }  
     
     .project-year {
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 4;
-        grid-column-end: 5;
-        font-size: 2vw;
-        opacity: 0;
-        transform: translateX(-4px) rotateX(-12deg);
-        -ms-transform-origin: left bottom;
-        transform-origin: left bottom;
-        transition: .3s cubic-bezier(.23,1,.32,1);
-        margin-top: 3rem;
-        margin-right: 0.5rem;
-        color: #ff3e55;;
+        display: none;
     }  
     
-    
-    .project:hover .project-category  {
-        opacity: 1;
-    }
-    .project:hover .project-year  {
-        opacity: 1;
-    }
-    .project:hover .project-cover  {
-        display: block;
-        width: 20vw;
-        max-height: 65vw;
-        max-width: 65vw;
-        max-height: 65vmin;
-        max-width: 65vmin;
-        opacity: 1;
-    }
-    .project-title:hover {
-        font-family: 'Big Shoulders Inline Text', cursive;
-     }  
  }
 
  
