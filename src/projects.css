@@ -71,29 +71,147 @@
  border:0.1em solid #FFFFFF;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1366px)  {
+  .thumb-container {
+    position: relative;
+    left: 2rem;
+    top: 15rem;
+    justify-content: center;
+    margin-top: 4rem;
+    align-items: center;
+   }
+  
+   .project {
+     position: relative;
+     width: 80vw;
+     height: 15vh;
+     margin: 1rem 1rem;
+     justify-content: center;
+     align-items: center;
+   }
+    
+  .filter-button-container {
+    position: relative;
+    left: 13rem;
+    top: 10rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #021D44;
+    height: 10rem;
+   }
+  
+  .toggle-btn {
+   display: inline-block;
+   margin:0;
+   width: 16vw;
+   height: 16vw;
+   font-size: 2.5vw;
+   }
+  
+   .toggle-btn-active {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:none;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    text-decoration:none;
+    font-weight:500;
+    color:#ff3e55;
+    text-align:center;
+    text-decoration: none;
+    font-size: 2.8vw;
+    transition: all 0.2s;
+    width: 16vw;
+    height: 16vw;
+    cursor:pointer;
+    background-color:#FFFFFF;
+   }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+
+  .thumb-container {
+    position: relative;
+    left: 2rem;
+    top: 15rem;
+    justify-content: center;
+    margin-top: 4rem;
+    align-items: center;
+   }
+  
+   .project {
+     position: relative;
+     width: 80vw;
+     height: 15vh;
+     margin: 1rem 1rem;
+     justify-content: center;
+     align-items: center;
+   }
+    
+  .filter-button-container {
+    position: relative;
+    left: 10rem;
+    top: 10rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #021D44;
+    height: 10rem;
+   }
+  
+  .toggle-btn {
+   display: inline-block;
+   margin:0;
+   width: 16vw;
+   height: 16vw;
+   font-size: 2.5vw;
+   }
+  
+   .toggle-btn-active {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:none;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    text-decoration:none;
+    font-weight:500;
+    color:#ff3e55;
+    text-align:center;
+    text-decoration: none;
+    font-size: 2.8vw;
+    transition: all 0.2s;
+    width: 16vw;
+    height: 16vw;
+    cursor:pointer;
+    background-color:#FFFFFF;
+   }
+}
 
 
 
-@media all and (max-width: 800px){
+@media all and (max-width: 720px){
 
 
 .thumb-container {
   position: absolute;
-  left: 0rem;
+  left: 1rem;
   top: 15rem;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
   align-items: center;
-  justify-content: center;
  }
 
  .project {
+   position: relative;
    width: 80vw;
+   height: 10vh;
+   margin: 1rem 1rem;
+   justify-content: center;
+   align-items: center;
  }
   
 .filter-button-container {
   position: absolute;
-  left: 5rem;
+  left: 5.5rem;
   top: 10rem;
   align-items: center;
   justify-content: center;

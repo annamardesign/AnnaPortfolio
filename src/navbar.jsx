@@ -41,7 +41,7 @@ const NavBar = () => {
     <div className="navbar-container container"> 
     <NavLink to="/resume" className="logo" onClick={closeMobileMenu} ><Logo /></NavLink>
     <div className="menu-icon" onClick={handleClick}>
-         {click? <VscThreeBars className="bars"/> : <TiTimes className="close"/>}
+         {click? <TiTimes className="close"/> : <VscThreeBars className="bars"/> }
     </div>
     <ul className={click? 'nav-menu active' : 'nav-menu'}>
     <li className='nav-item'>
