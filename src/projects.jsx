@@ -20,9 +20,7 @@ export default class Projects extends Component {
     this.setState({selectedCategory: category});
   }
 
-  thumbnails = {
-
-  }
+ 
 
   render() {
     const { selectedCategory, projects:projectsData } = this.state;

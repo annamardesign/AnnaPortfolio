@@ -188,13 +188,13 @@
 
 
 
-@media all and (max-width: 720px){
+@media all and (max-width: 720px) {
 
 
 .thumb-container {
   position: absolute;
   left: 1rem;
-  top: 15rem;
+  top: 10rem;
   justify-content: center;
   margin-top: 4rem;
   align-items: center;
@@ -210,41 +210,10 @@
  }
   
 .filter-button-container {
-  position: absolute;
-  left: 5.5rem;
-  top: 10rem;
-  align-items: center;
-  justify-content: center;
-  background-color: #021D44;
-  height: 10rem;
+  display: none;
  }
 
-.toggle-btn {
- display: inline-block;
- margin:0;
- width: 16vw;
- height: 16vw;
- font-size: 2.5vw;
- }
 
- .toggle-btn-active {
-  display:inline-block;
-  padding:0.35em 1.2em;
-  border:none;
-  margin:0 0.3em 0.3em 0;
-  border-radius:0.12em;
-  text-decoration:none;
-  font-weight:500;
-  color:#ff3e55;
-  text-align:center;
-  text-decoration: none;
-  font-size: 2.8vw;
-  transition: all 0.2s;
-  width: 16vw;
-  height: 16vw;
-  cursor:pointer;
-  background-color:#FFFFFF;
- }
 
 }
 
