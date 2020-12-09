@@ -164,34 +164,37 @@
 }
 
 
-@media screen and (min-width: 1021px) and (max-width: 1366px)  {
+@media screen and (min-width: 1024px) and (max-width: 1366px)  {
 
    .project-img {
-      position: absolute;
-      width: 30vw;
-      top: -18rem;
-      right: -10rem;
-      left: -15rem;
-      z-index: 1;
-      margin: 5rem auto;   
-     }
+    position: relative;
+    width: 50vw;
+    z-index: 1;
+    top: 10%;  
+    left: -10%;
+   }
    
      .sticky {
-      top: 45%;
+      top: 50%;
       left: 46%;
      }
    
      .objective {
+      position: relative;
       font-size: 2.5vw;
       width: 40vw;
+      top: 70vh;
+      left: 5%;
      }
    
      .objective-title {
+      position: relative;
       font-size: 2.5vw;
      }
    
      .presentation {
       display: block;
+      position: relative;
      }
    
      .tablet {
@@ -208,6 +211,7 @@
    
      .presentation-mobile {
         display: block;
+        position: relative;
      }
    
      .mobile-inner {
@@ -221,70 +225,95 @@
       width: 20vw;
       margin-left: 8rem;
     }
-   
+
+    .back-btn {
+      display: block;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      top: 70vh;
+      left: -2vw;
+      width: 4rem;
+      height: 4rem;
+    }
     
    }
        
-@media screen and (min-width: 721px) and (max-width: 1020px) {
+@media screen and (min-width: 721px) and (max-width: 1023px) {
 
    .project-img {
-      position: absolute;
-      width: 30vw;
-      top: -18rem;
-      right: -10rem;
-      left: -15rem;
+      position: relative;
+      width: 50vw;
       z-index: 1;
-      margin: 5rem auto;   
+      top: 10%;  
+      left: -10%;
      }
-   
-     .sticky {
-      top: 40%;
-      left: 46%;
-     }
-   
-     .objective {
-      font-size: 2.5vw;
-      width: 40vw;
-     }
-   
-     .objective-title {
-      font-size: 2.5vw;
-     }
-   
-     .presentation {
-      display: block;
-     }
-   
-     .tablet {
+     
+       .sticky {
+        top: 50%;
+        left: 46%;
+       }
+     
+       .objective {
+        position: relative;
+        font-size: 2.5vw;
+        width: 40vw;
+        top: 70vh;
+        left: 5%;
+       }
+     
+       .objective-title {
+        position: relative;
+        font-size: 2.5vw;
+       }
+     
+       .presentation {
         display: block;
-        width: 30vw;
-        margin: 0 7rem;
-        margin-top: 45rem;  
-     }
-   
-     .mobile {
+        position: relative;
+       }
+     
+       .tablet {
+          display: block;
+          width: 30vw;
+          margin: 0 7rem;
+          margin-top: 45rem;  
+       }
+     
+       .mobile {
+          display: block;
+          width: 20vw;
+       }
+     
+       .presentation-mobile {
+          display: block;
+          position: relative;
+       }
+     
+       .mobile-inner {
         display: block;
         width: 20vw;
-     }
-   
-     .presentation-mobile {
+        margin-left: 12rem;
+      }
+     
+      .mobile-more {
         display: block;
+        width: 20vw;
+        margin-left: 8rem;
+      }
+  
+      .back-btn {
+        display: block;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        top: 70vh;
+        left: -2vw;
+        width: 4rem;
+        height: 4rem;
+      }
+      
      }
    
-     .mobile-inner {
-      display: block;
-      width: 20vw;
-      margin-left: 12rem;
-    }
-   
-    .mobile-more {
-      display: block;
-      width: 20vw;
-      margin-left: 8rem;
-    }
-   
-    
-   }
        
     
 @media all and (min-width: 280px) and (max-width: 720px)  {

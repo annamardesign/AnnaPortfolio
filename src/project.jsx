@@ -33,7 +33,7 @@ const Project = ({ match, history }) => {
          <p>{project.objective}</p>
          <a href={project.url} className="project-url">Visit web site</a>
        </div>  
-       <button className="back-btn" onClick={() => history.push('/projects')}><TiArrowBackOutline style={{color:"#fff",fontSize:"2vw"}}/></button>
+       <button className="back-btn" onClick={() => history.push('/projects')}><TiArrowBackOutline style={{color:"#fff", fontSize:"2vw", fontWeight:"normal"}}/></button>
     </article>
     
     <section className="presentation">
