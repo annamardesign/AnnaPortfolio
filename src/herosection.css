@@ -210,6 +210,141 @@ body {
       background-color: #00BFFF;
      }
     
+   @media screen and (min-width: 1024px) and (max-width: 1366px)  {
+
+    .links-wrapper {
+      position: absolute;
+      top: 45rem;
+      left: 1rem;
+    }
+
+    .article {
+      display: block;
+      position: absolute;
+      top: 25rem;
+      left: 1rem;
+      margin-top: 0;
+      padding-top: 0;
+     }
+
+
+     .aside img {
+     align-items: center;
+     border-radius: 50%;
+     margin-bottom: 0.8rem;
+     width: 50vw;
+     }
+
+     .email {
+      line-height: 1rem;
+      font-size: 2rem;
+    }
+
+    .cv a {
+      line-height: 0.8rem;
+      font-size: 2rem;
+      margin-bottom: 0;
+      margin-right: 3rem;
+     }
+  
+     .grid-wrapper {
+       display: block;
+     } 
+     
+     
+     .canvas-drawing {
+      display: none;
+      }
+  
+      .canvas-fingerprint {
+       display: none;
+      }
+
+      .round {
+       display: none;
+      }
+     
+      .flex-wrapper {
+       flex-direction: column;
+      }  
+      .about-me {
+        top: 10vh;
+        padding: 0;
+        margin: 0;
+        font-size: 3vw;
+      }
+      .article {
+        top: 70vh;
+      }
+  }
+
+
+   @media screen and (min-width: 721px) and (max-width: 1023px) {
+
+    .links-wrapper {
+      position: absolute;
+      top: 35rem;
+      left: 1rem;
+    }
+
+    .article {
+      display: block;
+      position: absolute;
+      top: 25rem;
+      left: 1rem;
+      margin-top: 0;
+      padding-top: 0;
+     }
+
+
+     .aside img {
+     align-items: center;
+     border-radius: 50%;
+     margin-bottom: 0.8rem;
+     width: 50vw;
+     }
+
+     .email {
+      line-height: 0.8rem;
+      font-size: 1rem;
+    }
+
+    .cv a {
+      line-height: 0.8rem;
+      font-size: 0.3rem;
+      margin-bottom: 0;
+      margin-right: 3rem;
+     }
+  
+     .grid-wrapper {
+       display: block;
+     } 
+     
+     
+     .canvas-drawing {
+      display: none;
+      }
+  
+      .canvas-fingerprint {
+       display: none;
+      }
+
+      .round {
+       display: none;
+      }
+     
+      .flex-wrapper {
+       flex-direction: column;
+      }  
+      .about-me {
+        top: 10vh;
+        padding: 0;
+        margin: 0;
+      }
+      .article {
+        top: 70vh;
+      }
+  }
 
 
    @media only screen and (max-width: 765px) {
@@ -246,6 +381,7 @@ body {
       line-height: 0.8rem;
       font-size: 0.3rem;
       margin-bottom: 0;
+      margin-right: 2rem;
      }
   
      .grid-wrapper {
