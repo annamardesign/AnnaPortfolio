@@ -214,7 +214,7 @@ body {
 
    @media only screen and (max-width: 765px) {
    
-    .links-wrap {
+    .links-wrapper {
       position: absolute;
       top: 23rem;
       left: 1rem;
@@ -229,11 +229,12 @@ body {
       padding-top: 0;
      }
 
-     .me {
+
+     .aside img {
      align-items: center;
      border-radius: 50%;
      margin-bottom: 0.8rem;
-     width: 50%;
+     width: 50vw;
      }
 
      .email {
@@ -253,35 +254,26 @@ body {
      
      
      .canvas-drawing {
-      display: block;
-      height: 60vw;
-      width: 60vw;
-      border-radius: 10%;
-      border: 1px solid #fff;
-      background-color: transparent;
-      margin: 1rem 1rem;
-      box-shadow: 0 4px 10px rgba(60,64,67,.28);
-      cursor: pointer;
+      display: none;
       }
   
       .canvas-fingerprint {
-       display: block;
-       height: 60vw;
-       width: 60vw;
-       border-radius: 10%;
-       border: 1px solid #fff;
-       background-color: transparent;
-       margin: 1rem 1rem;
-       box-shadow: 0 4px 10px rgba(60,64,67,.28);
-       cursor: pointer;
+       display: none;
       }
 
       .round {
-       position: absolute;
-       left: 2.6rem;
-       }
+       display: none;
+      }
      
       .flex-wrapper {
        flex-direction: column;
       }  
+      .about-me {
+        top: 10vh;
+        padding: 0;
+        margin: 0;
+      }
+      .article {
+        top: 70vh;
+      }
   }

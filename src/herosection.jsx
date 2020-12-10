@@ -2,7 +2,6 @@ import React from 'react';
 import FingerPrintPanel from "./common/fingerprint.jsx";
 import DrawingPanel from "./common/draw.jsx";
 import Email from './components/email.jsx';
-import ReactTooltip from 'react-tooltip';
 import { Link } from "react-router-dom";
 import './herosection.css';
 
@@ -16,8 +15,7 @@ const Herosection = () => {
      <img src={ require("./images/Anna-min.png")} alt="Anna Marinova" className="me"/>
       <ul className="links-wrapper">
         <li className="cv"><Link to="/files/myfile.pdf" style={{fontSize:"1.2rem"}} target="_blank" download>Download CV</Link></li>
-        <li className="email"><span data-tip="Send me an email" data-for='myemail'><Email/></span></li>
-        <ReactTooltip id="myemail" place="bottom" data-event="click" data-offset="{'place': 'left'}" type="light" effect="solid"/>
+        <li className="email"><Email/></li>
      </ul>
     </aside>
     <article className="article">

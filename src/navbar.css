@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .navbar {
   background: #021D44;
   height: 80px;
@@ -37,6 +36,9 @@
 
 
   .nav-menu {
+    position: absolute;
+    top: 0;
+    right: 4rem;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -52,7 +54,7 @@
     display: none;
   }
 
-  .navbar .navli  {
+  .navbar .navli   {
    position: relative;
 	 display: inline-block;
    margin: 1rem 1.5rem;
@@ -127,6 +129,13 @@
 
   }
 
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 30rem;
+   } 
+
 
    /* SOCIAL MEDIA */ 
    .social-container {
@@ -177,6 +186,8 @@
      margin-bottom: 0;
      color: #FFFFFF;
     }
+
+
     
   @media screen and (min-width: 280px) and (max-width: 767px) {
     
@@ -258,13 +269,8 @@
       position: absolute;
       top: 0;
       left: 0;
-     }
-    
+     } 
   }
-
-  
-   
-
 
 @media screen and (min-width: 768px) and (max-width: 1366px) {
 
