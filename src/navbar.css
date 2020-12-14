@@ -240,7 +240,7 @@
       display: block;
       position: absolute;
       top: 0;
-      right: 2rem;
+      right: -1rem;
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
@@ -349,4 +349,5 @@
   left: 0;
  } 
 }
+
 

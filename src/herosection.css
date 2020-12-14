@@ -219,7 +219,7 @@ body {
   }
     
 
-   @media only screen and (max-width: 765px) {
+   @media only screen and (min-width: 569px) and (max-width: 765px) {
 
     .grid-wrapper {
       display: block;
@@ -232,14 +232,15 @@ body {
     .article {
       display: block;
       padding: 0;
-      margin-left: 0.2rem;
-      margin-right: 0.2rem;
+      margin-left: -20rem;
+      text-align: left;
     }
 
     .picture {
       display: block;
+      width: 100vw;
       position: relative;
-      margin-left:-185px;
+      margin-left:-165px;
     }
 
     .links-wrapper {
@@ -252,4 +253,37 @@ body {
     }
   
 
+  }
+
+  @media only screen and (max-width: 568px) {
+
+    .grid-wrapper {
+      display: block;
+     } 
+
+     .frontend {
+      display: block;
+    }
+    
+    .article {
+      display: block;
+      width: 80vw;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .picture {
+      display: block;
+      position: relative;
+      margin-left:-180px;
+    }
+
+    .links-wrapper {
+      margin-left: -3rem;
+      margin-top: 4rem;
+    }
+  
+    .cv {
+      margin-right: 2rem;
+    }
   }
