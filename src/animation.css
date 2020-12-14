@@ -30,7 +30,7 @@ height: 110px;
 border-radius: 30px 30px 24px 24px;
 background: #FFCEA5;
 transform-origin: bottom center;
-animation: head 30s linear infinite;
+animation: head 20s linear infinite;
 z-index: 300;
 }
 
@@ -108,7 +108,7 @@ height: 18px;
 border-radius: 50%;
 background: #564239;
 box-shadow: 50px 0 0 0 #564239;
-animation: eyes 30s linear infinite;
+animation: eyes 20s linear infinite;
 z-index: 6;
 }
 .mouth {
@@ -136,7 +136,7 @@ transform-origin: 12px 12px;
 transform: rotate(-30deg);
 background: #FFCEA5;
 z-index: 4;
-animation: rightArm 30s linear infinite;
+animation: rightArm 20s linear infinite;
 }
 
 .rightArm:before {
@@ -148,7 +148,7 @@ border-radius: 12px;
 transform-origin: 12px 12px;
 transform: rotate(30deg);
 background: #FFCEA5;
-animation: rightForearm 30s linear infinite;
+animation: rightForearm 20s linear infinite;
 content: '';
 position: absolute;
 }
@@ -165,7 +165,7 @@ transform-origin: 12px 12px;
 transform: rotate(30deg);
 background: #FFCEA5;
 z-index: 4;
-animation: leftArm 30s linear infinite;
+animation: leftArm 20s linear infinite;
 }
 
 .leftArm:before {
@@ -177,7 +177,7 @@ border-radius: 12px;
 transform-origin: 12px 12px;
 transform: rotate(-22deg);
 background: #FFCEA5;
-animation: leftForearm 30s linear infinite;
+animation: leftForearm 20s linear infinite;
 content: '';
 position: absolute;
 }
@@ -208,7 +208,7 @@ height: 48px;
 border-radius: 50%;
 background-color:#001;
 z-index:200;
-animation: leftForearm 30s linear infinite;
+animation: leftForearm 20s linear infinite;
 }
 
 .rsleeve {
@@ -221,7 +221,7 @@ height: 48px;
 border-radius: 50%;
 background-color:#001;
 z-index:200;
-animation: rightForearm 30s linear infinite;
+animation: rightForearm 20s linear infinite;
 }
 
 .table {
@@ -293,19 +293,19 @@ position: absolute;
 left: 80px;
 bottom: 200px;
 z-index: 2;
-animation: bird 30s linear infinite;
+animation: bird 20s linear infinite;
 }
 
 .bird-body {
 content: '';
 position: absolute;
 top: 0px;   
-left: 25px;
+left: 30px;
 width: 96px; 
 height: 56px;
 border-radius: 37px 10px;
 background: #d6e7ca;
-animation: birdBody 30s linear infinite;
+animation: birdBody 20s linear infinite;
 background-color: #004f8c;
 background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
 }
@@ -328,7 +328,7 @@ width: 14px;
 height: 14px;
 border-radius: 50%;
 background: #012135;
-animation: birdEye 30s linear infinite;
+animation: birdEye 20s linear infinite;
 background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
 content: '';
 position: absolute;
@@ -371,7 +371,7 @@ border-radius: 43px 0 0 0;
 background: linear-gradient(62deg, #d6e7ca 65%, transparent 65%);
 transform-origin: bottom right;
 transform: rotate(28deg);
-animation: birdWing 30s linear infinite;
+animation: birdWing 20s linear infinite;
 }
 
 .wing:before {
