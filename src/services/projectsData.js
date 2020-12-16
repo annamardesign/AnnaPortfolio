@@ -15,17 +15,17 @@ export const projectsData = [
     },
 
     {
-      url: "",
+      url: "https://www.behance.net/AnnaMarino",
       image: require("../images/Fashion-illustration-min.png"),
-      title: "Second Project",
+      title: "Digital",
       category: "Illustration", 
       id: "2",
-      year:"2019",
-      objective: "lala",
-      tablet: require("../images/ipad.svg"),
-      mobile: require("../images/iphone.svg"),
-      mobileInner: require("../images/iphone.svg"),
-      mobileMore: require("../images/iphone.svg"),
+      year:"2017",
+      objective: "To explore different digital drawing styles and brushes.",
+      tablet: require("../images/ipadIllustration.png"),
+      mobile: require("../images/iphoneIllustration0.png"),
+      mobileInner: require("../images/iphoneIllustration1.png"),
+      mobileMore: require("../images/iphoneIllustration2.png"),
       
     },
     {
