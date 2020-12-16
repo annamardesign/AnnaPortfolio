@@ -11,7 +11,7 @@ export const projectsData = [
       tablet: require("../images/ipad.svg"),
       mobile: require("../images/iphone.svg"),
       mobileInner: require("../images/iphone.svg"),
-      mobileMore: require("../images/iphone.svg")
+      mobileMore: require("../images/iphone.svg"),
     },
 
     {
@@ -25,21 +25,21 @@ export const projectsData = [
       tablet: require("../images/ipad.svg"),
       mobile: require("../images/iphone.svg"),
       mobileInner: require("../images/iphone.svg"),
-      mobileMore: require("../images/iphone.svg")
+      mobileMore: require("../images/iphone.svg"),
       
     },
     {
         url: "",
-        image: "",
-        title: "Third Project",
-        category: "Illustration", 
+        image: require("../images/cultureBeat.png"),
+        title: "Culture Beat",
+        category: "Web", 
         id: "3",
-        year:"2019",
-        objective: "lala",
-        tablet: require("../images/ipad.svg"),
-        mobile: require("../images/iphone.svg"),
-        mobileInner: require("../images/iphone.svg"),
-        mobileMore: require("../images/iphone.svg")
+        year:"2017",
+        objective: "To build responsive Bootstrap web site for an Art Online Magazine.",
+        tablet: require("../images/ipadCultureBeat.png"),
+        mobile: require("../images/iphoneCultureBeat1.png"),
+        mobileInner: require("../images/iphoneCultureBeat2.png"),
+        mobileMore: require("../images/iphoneCultureBeat3.png"),
         
       }
 ];

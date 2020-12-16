@@ -37,7 +37,7 @@ const Project = ({ match, history }) => {
     </article>
     
     <section className="presentation">
-      <img src={project.tablet} className="tablet" ></img>
+      <img src={project.tablet} className="tablet"></img>
       <img src={project.mobile} className="mobile"></img>
     </section>
     <section className="presentation-mobile">
