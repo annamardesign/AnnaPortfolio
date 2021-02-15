@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import ListGroup from './common/ListGroup.jsx';
-import Thumbnail from './components/thumbnail.jsx';
-import { projectsData } from './services/projectsData.js';
-import { getCategory } from './services/getCategory.js';
+import ListGroup from '../common/ListGroup.jsx';
+import Thumbnail from '../components/thumbnail.jsx';
+import { projectsData } from '../services/projectsData.js';
+import { getCategory } from '../services/getCategory.js';
 import './projects.css';
-import './App.css';
+
 
 
 export default class Projects extends Component {

@@ -2,16 +2,16 @@
 export const projectsData = [
     {
       url: "",
-      image: require("../images/web-test.png"),
-      title: "First Project",
+      image: require("../images/explorer.png"),
+      title: "Explorer",
       category: "Web",
       id: "1",
       year:"2020",
-      objective: "Rebuild regionalnorazvitie.com website with React and Contentful as a CMS.",
-      tablet: require("../images/ipad.svg"),
-      mobile: require("../images/iphone.svg"),
-      mobileInner: require("../images/iphone.svg"),
-      mobileMore: require("../images/iphone.svg"),
+      objective: "To build travel agency web site with React, Redux and Axios, that loads data from Amadeus API.",
+      tablet: require("../images/ipadExplorer.png"),
+      mobile: require("../images/iphoneExplorer1.png"),
+      mobileInner: require("../images/iphoneExplorer2.png"),
+      mobileMore: require("../images/iphoneExplorer3.png"),
     },
 
     {

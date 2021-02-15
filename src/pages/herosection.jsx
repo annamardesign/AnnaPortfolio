@@ -1,6 +1,6 @@
 import React from 'react';
-import Email from './components/email.jsx';
-import Animation from './animation.js';
+import Email from '../components/email.jsx';
+import Animation from '../components/animation.js';
 import { Link } from "react-router-dom";
 import './herosection.css';
 
@@ -15,8 +15,8 @@ const Herosection = () => {
     </div>
     <article className="article">
     <div className="about-me">
-     <p class-name="intro-line"> Hi, I'm Anna Marinova and the main area of my expertise is front end development. </p>
-     <p class-name="intro-line"> Coding interactive layouts, animations and building web apps with <span style={{color:"#ff3e55"}}>HTML5, CSS, JavaScript, React</span> has become my passion.</p>
+     <p class-name="intro-line"> Hi, I'm Anna Marinova and this is my Portfolio as Front-End-Developer. </p>
+     <p class-name="intro-line"> Coding interactive layouts, animations and building web apps with <span style={{color:"#ff3e55"}}>HTML5, CSS3, JavaScript, React</span> has become my passion.</p>
      <p class-name="intro-line"> I love to draw digitally and make mosaics on the side. </p>
      </div>
     <ul className="links-wrapper">

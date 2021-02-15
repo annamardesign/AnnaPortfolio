@@ -1,5 +1,5 @@
 import React from 'react';
-import { projectsData } from './services/projectsData';
+import { projectsData } from '../services/projectsData';
 import { useState, useEffect } from 'react';
 import {TiArrowBackOutline} from 'react-icons/ti';
 import './project.css';

@@ -6,6 +6,7 @@
 
 .navbar {
   background: #021D44;
+  width: 100vw;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -278,7 +279,7 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: absolute;
     top: 80px;

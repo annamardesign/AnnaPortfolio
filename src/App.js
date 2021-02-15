@@ -1,13 +1,12 @@
 import React from 'react';
 import {Route, Redirect, Switch} from "react-router-dom";
-import NavBar from "./navbar";
+import NavBar from "./components/navbar";
 import Logo from "./logo";
-import Herosection from "./herosection";
-import Project from "./project";
-import Projects from "./projects";
-import Freebies from "./freebies";
-import Contact from "./contact";
-import './App.css';
+import Herosection from "./pages/herosection";
+import Project from "./pages/project";
+import Projects from "./pages/projects";
+import Freebies from "./pages/freebies";
+import Contact from "./pages/contact";
 
 
 const App = () => {

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { NavLink, Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { NavLink } from "react-router-dom";
 import { FiTwitter} from 'react-icons/fi';
 import { FiGithub } from 'react-icons/fi';
 import { RiBehanceLine} from 'react-icons/ri';
@@ -7,34 +7,15 @@ import { FiCodepen } from 'react-icons/fi';
 import { VscThreeBars } from 'react-icons/vsc';
 import { TiTimes } from 'react-icons/ti';
 import ReactTooltip from 'react-tooltip';
-import Logo from './logo.jsx';
+import Logo from '../logo.jsx';
 import "./navbar.css";
 
 const NavBar = () => {
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
 
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-
-    const showButton = () => {
-      if(window.innerWidth <= 960){
-          setButton(false) 
-      } else { 
-          setButton(true);
-          }
-      }
-  
-
-      useEffect(() => {
-          showButton()
-           window.addEventListener('resize', showButton);
-            return (
-             window.removeEventListener('resize', showButton))
-            
-      },[]);
-
   
     return (<React.Fragment>
     <div className="navbar">
@@ -59,7 +40,7 @@ const NavBar = () => {
     <ReactTooltip id="git" place="bottom" data-offset="{'place': 'left'}" type="light" effect="solid"/>
     <li className="icon"><a href="https://www.behance.net/AnnaMarino" data-tip="behance" data-for='behance' className="social" activeclassname="active"><RiBehanceLine /></a></li>
     <ReactTooltip id="behance" place="bottom" data-offset="{'place': 'left'}" type="light" effect="solid"/>
-    <li className="icon"><a href="https://www.codepen.io/annamardesigns/pens/" data-tip="codepen" data-for='codepen' className="social" activeclassname="active"><FiCodepen /></a></li>
+    <li className="icon"><a href="https://codepen.io/annamardesign" data-tip="codepen" data-for='codepen' className="social" activeclassname="active"><FiCodepen /></a></li>
     <ReactTooltip id="codepen" place="bottom" data-offset="{'place': 'left'}" type="light" effect="solid"/>
     </ul>
   </div>
