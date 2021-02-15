@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 6rem;
   padding: 0;
   background-color: #021D44;
   font-size: 1.2rem;
@@ -15,18 +15,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.page {
-  background: #021D44;
-  color: white;
-  font-size: 1.8vw;
-  margin: 0 auto;
-  animation: show 500ms ease-out forwards;
-  animation-delay: 240ms;
-  opacity: 0;
-  }
   
   @-webkit-keyframes show {
   0%   { opacity: 0; }

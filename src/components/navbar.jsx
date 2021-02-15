@@ -19,7 +19,6 @@ const NavBar = () => {
   
     return (<React.Fragment>
     <div className="navbar">
-    <div className="navbar-container box"> 
     <NavLink to="/resume" className="logo" onClick={closeMobileMenu} ><Logo /></NavLink>
     <div className="menu-icon" onClick={handleClick}>
          {click? <TiTimes className="close"/> : <VscThreeBars className="bars"/> }
@@ -43,8 +42,7 @@ const NavBar = () => {
     <li className="icon"><a href="https://codepen.io/annamardesign" data-tip="codepen" data-for='codepen' className="social" activeclassname="active"><FiCodepen /></a></li>
     <ReactTooltip id="codepen" place="bottom" data-offset="{'place': 'left'}" type="light" effect="solid"/>
     </ul>
-  </div>
-</div></React.Fragment>  );
+  </div></React.Fragment>  );
 }
 
 export default NavBar;

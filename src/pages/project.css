@@ -11,6 +11,7 @@
    animation-timing-function: ease;
    animation-fill-mode: forwards;
    opacity: 0;
+   width: 100vw;
 }
 
 .sticky {
@@ -19,7 +20,6 @@
    font-size: 4vw;
    font-weight: 400;
    padding: 0.5rem;
-   text-align: center;
    top: 65%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -28,6 +28,7 @@
    text-shadow: 0 2px 40px rgba(0,0,0,.6);
    z-index: 3;
    display: block;
+   text-align: center;
 }
 
 .objective {
@@ -173,145 +174,149 @@
     left: -10%;
    }
    
-     .sticky {
-      top: 50%;
-      left: 46%;
-     }
-   
-     .objective {
-      position: relative;
-      font-size: 2.5vw;
-      width: 40vw;
-      top: 70vh;
-      left: 5%;
-     }
-   
-     .objective-title {
-      position: relative;
-      font-size: 2.5vw;
-     }
-   
-     .presentation {
-      display: block;
-      position: relative;
-     }
-   
-     .tablet {
-        display: block;
-        width: 30vw;
-        margin: 0 7rem;
-        margin-top: 45rem;  
-     }
-   
-     .mobile {
-        display: block;
-        width: 20vw;
-     }
-   
-     .presentation-mobile {
-        display: block;
-        position: relative;
-     }
-   
-     .mobile-inner {
-      display: block;
-      width: 20vw;
-      margin-left: 12rem;
-    }
-   
-    .mobile-more {
-      display: block;
-      width: 20vw;
-      margin-left: 8rem;
-    }
-
-    .back-btn {
-      display: block;
-      position: relative;
-      align-items: center;
-      justify-content: center;
-      top: 70vh;
-      left: -2vw;
-      width: 4rem;
-      height: 4rem;
-    }
-    
+   .sticky {
+    top: 50%;
+    left: 50%;
    }
+   
+   .objective {
+    position: relative;
+    font-size: 2.5vw;
+    width: 40vw;
+    top: 70vh;
+    left: 5%;
+    margin-left: 2rem;
+   }
+   
+   .objective-title {
+    position: relative;
+    font-size: 2.5vw;
+   }
+   
+   .presentation {
+    display: block;
+    position: relative;
+   }
+   
+   .tablet {
+    display: block;
+    width: 30vw;
+    margin: 0 7rem;
+    margin-top: 45rem;  
+   }
+   
+   .mobile {
+    display: block;
+    width: 20vw;
+   }
+   
+   .presentation-mobile {
+     display: block;
+     position: relative;
+   }
+   
+   .mobile-inner {
+    display: block;
+    width: 20vw;
+    margin-left: 12rem;
+   }
+   
+   .mobile-more {
+    display: block;
+    width: 20vw;
+    margin-left: 8rem;
+   }
+
+   .back-btn {
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 70vh;
+    left: -2vw;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+   }
+    
+}
        
 @media screen and (min-width: 721px) and (max-width: 1023px) {
 
    .project-img {
-      position: relative;
-      width: 50vw;
-      z-index: 1;
-      top: 10%;  
-      left: -10%;
-     }
+    position: relative;
+    width: 50vw;
+    z-index: 1;
+    top: 10%;  
+    left: -10%;
+   }
      
-       .sticky {
-        top: 50%;
-        left: 46%;
-       }
+   .sticky {
+    top: 50%;
+    left: 50%;
+   }
      
-       .objective {
-        position: relative;
-        font-size: 2.5vw;
-        width: 40vw;
-        top: 70vh;
-        left: 5%;
-       }
+   .objective {
+    position: relative;
+    font-size: 2.5vw;
+    width: 40vw;
+    top: 70vh;
+    left: 5%;
+    margin-left: 2rem;
+   }
      
-       .objective-title {
-        position: relative;
-        font-size: 2.5vw;
-       }
+   .objective-title {
+    position: relative;
+    font-size: 2.5vw;
+   }
      
-       .presentation {
-        display: block;
-        position: relative;
-       }
+   .presentation {
+    display: block;
+    position: relative;
+   }
      
-       .tablet {
-          display: block;
-          width: 30vw;
-          margin: 0 7rem;
-          margin-top: 45rem;  
-       }
+   .tablet {
+    display: block;
+    width: 30vw;
+    margin: 0 7rem;
+    margin-top: 45rem;  
+   }
      
-       .mobile {
-          display: block;
-          width: 20vw;
-       }
+   .mobile {
+    display: block;
+    width: 20vw;
+   }
      
-       .presentation-mobile {
-          display: block;
-          position: relative;
-       }
+   .presentation-mobile {
+    display: block;
+    position: relative;
+   }
      
-       .mobile-inner {
-        display: block;
-        width: 20vw;
-        margin-left: 12rem;
-      }
+   .mobile-inner {
+    display: block;
+    width: 20vw;
+    margin-left: 12rem;
+   }
      
-      .mobile-more {
-        display: block;
-        width: 20vw;
-        margin-left: 8rem;
-      }
+   .mobile-more {
+    display: block;
+    width: 20vw;
+    margin-left: 8rem;
+   }
   
-      .back-btn {
-        display: block;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        top: 70vh;
-        left: -2vw;
-        width: 4rem;
-        height: 4rem;
-      }
+   .back-btn {
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 70vh;
+    left: -2vw;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+   }
       
-     }
+}
    
        
     
@@ -325,8 +330,9 @@
    left: -7vw;
 }
 .sticky {
+   position: relative;
    top: 40vh;
-   left: 33vw;
+   left: 50vw;
    width: 100%;
    position: relative;
 }
@@ -335,7 +341,7 @@
    display: block;
    position: relative;
    top: 60vh;
-   left: 2vw;
+   left: 2rem;
    width: 40vw;
    text-align: left;
    justify-content: left;
@@ -355,7 +361,7 @@
    align-items: center;
    justify-content: center;
    top: 50vh;
-   left: 2vw;
+   right: 2rem;
    width: 2rem;
    height: 2rem;
  }

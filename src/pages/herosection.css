@@ -13,6 +13,7 @@ body {
     z-index: -1;
     display: flex;
     height: auto;
+    width: 100vw;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -38,6 +39,7 @@ body {
     grid-auto-rows: auto;
     padding: 2rem;
     margin: 0 auto;
+    overflow: hidden;
   }
   
   .frontend {
@@ -50,7 +52,7 @@ body {
     background-color: transparent;
     padding: 1rem;
     margin: 2rem 2rem;
-    width: 80%;
+    width: 100%;
   }
   
 
@@ -235,8 +237,7 @@ body {
     .article {
       display: block;
       padding: 0;
-      margin-left: -20rem;
-      text-align: left;
+  
     }
 
     .picture {

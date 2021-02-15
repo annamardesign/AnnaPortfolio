@@ -27,7 +27,6 @@ export default class Projects extends Component {
     const filtered = selectedCategory && selectedCategory.id ? 
     projectsData.filter(p => p.category === selectedCategory.name) : projectsData;
     return (
-      <div className="page">
         <div className="flex-wrap">
          <div className="filter-button-container">
           <ListGroup 
@@ -51,6 +50,5 @@ export default class Projects extends Component {
             </Thumbnail> ))}
          </div>
       </div>
-    </div>
     )}
 }

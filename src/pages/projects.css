@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   flex-basis: 1;
+  width: 100%;
 }
 
 .thumb-container {
@@ -17,6 +18,7 @@
   margin-top: 3rem;
   align-items: center;
   justify-content: center;
+  width: 100vw;
  }
 
 .filter-button-container {
@@ -72,18 +74,20 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px)  {
+  
   .thumb-container {
     position: relative;
-    left: 2rem;
+    left: 18vw;
     top: 15rem;
     justify-content: center;
     margin-top: 4rem;
     align-items: center;
+    width: 100vw;
    }
   
    .project {
      position: relative;
-     width: 80vw;
+     width: 60vw;
      height: 15vh;
      margin: 1rem 1rem;
      justify-content: center;
@@ -92,7 +96,7 @@
     
   .filter-button-container {
     position: relative;
-    left: 13rem;
+    left: 25vw;
     top: 10rem;
     align-items: center;
     justify-content: center;
@@ -209,7 +213,7 @@
    align-items: center;
  }
   
-.filter-button-container {
+ .filter-button-container {
   display: none;
  }
 
