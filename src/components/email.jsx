@@ -8,7 +8,7 @@ export default class Email extends Component {
     super(props)
 
     this.state = {
-      email: "annamardesignbg@gmail.com",
+      email: "anna.marino@yahoo.es",
       isCopied: false
     }
   }
