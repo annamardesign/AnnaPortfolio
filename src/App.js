@@ -18,7 +18,7 @@ const App = () => {
           <Route path="/resume" component={Herosection} />
           <Route path="/projects/:id" component={Project} />
           <Route path="/projects" component={Projects} />
-          <Route path="/freebies" component={Freebies} />
+          {/* <Route path="/freebies" component={Freebies} /> */}
           <Route path="/contact" component={Contact} />
           <Redirect from="/" exact to="/resume" />
           <Redirect from="/logo" exact to="/resume" />

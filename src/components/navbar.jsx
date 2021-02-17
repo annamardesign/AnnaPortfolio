@@ -50,7 +50,7 @@ const NavBar = () => {
               Projects
             </NavLink>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink
               to="/freebies"
               className="navli"
@@ -59,7 +59,7 @@ const NavBar = () => {
             >
               Freebies
             </NavLink>
-          </li>
+          </li> */}
           <li className="icon">
             <a
               href="https://www.twitter.com/annamardesign"

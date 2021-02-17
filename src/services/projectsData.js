@@ -28,7 +28,7 @@ export const projectsData = [
     mobileMore: require("../images/iphoneIllustration2.png"),
   },
   {
-    url: "",
+    url: "https://culture-beat.netlify.app",
     image: require("../images/cultureBeat.png"),
     title: "Culture Beat",
     category: "Web",

@@ -81,10 +81,18 @@
   bottom: 8rem;
   right: 6rem;
   margin-top: 0;
+  cursor: pointer;
+  z-index: 105;
 }
 
 .project-url {
   color: #00bfff;
+  cursor: pointer;
+  z-index: 105;
+  background-color: transparent;
+  border: none;
+  font-size: 1vw;
+  margin-left: -0.5rem;
 }
 
 .back-btn.active {
@@ -113,7 +121,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   padding: 14rem;
-  margin-top: 35%;
+  margin-top: 65%;
   margin-bottom: 1rem;
   position: relative;
   z-index: 4;
@@ -147,7 +155,7 @@
   border-radius: 7%/7%;
   box-shadow: 0 2px 200px 0 #000, 0 2px 50px 0 #000;
   pointer-events: none;
-  margin-top: 2rem;
+  margin-top: 12rem;
 }
 
 .mobile-inner {
@@ -190,13 +198,19 @@
   .presentation {
     display: block;
     position: relative;
+    padding: 0;
+  }
+
+  .project-url {
+    font-size: 2vw;
   }
 
   .tablet {
+    position: relative;
     display: block;
     width: 30vw;
-    margin: 0 7rem;
-    margin-top: 45rem;
+    margin-top: 75rem;
+    right: -15rem;
   }
 
   .mobile {
@@ -234,7 +248,7 @@
   }
 }
 
-@media screen and (min-width: 721px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .project-img {
     position: relative;
     width: 50vw;
@@ -265,13 +279,19 @@
   .presentation {
     display: block;
     position: relative;
+    padding: 0;
+  }
+
+  .project-url {
+    font-size: 2vw;
   }
 
   .tablet {
+    position: relative;
     display: block;
     width: 30vw;
-    margin: 0 7rem;
-    margin-top: 45rem;
+    margin-top: 75rem;
+    right: -15rem;
   }
 
   .mobile {
@@ -309,7 +329,7 @@
   }
 }
 
-@media all and (min-width: 280px) and (max-width: 720px) {
+@media all and (min-width: 280px) and (max-width: 767px) {
   .project-img {
     position: relative;
     width: 50vw;
@@ -351,6 +371,10 @@
     right: 2rem;
     width: 2rem;
     height: 2rem;
+  }
+
+  .project-url {
+    font-size: 2vw;
   }
 
   .presentation {
