@@ -153,11 +153,13 @@
     font-weight: bold;
     padding: 0.5rem;
     text-align: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 260%;
     transform: translate(-50%, -50%);
     color: #ff3e55;
+    width: 100%;
   }
 
   .project-cover {

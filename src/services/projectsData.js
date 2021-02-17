@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    url: "",
+    url: "https://explorertravel.netlify.app",
     image: require("../images/explorer.png"),
     title: "Explorer",
     category: "Web",
