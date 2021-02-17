@@ -1,6 +1,4 @@
-
-/* PROJECTS CSS */ 
-
+/* PROJECTS CSS */
 
 .flex-wrap {
   height: auto;
@@ -19,7 +17,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
- }
+}
 
 .filter-button-container {
   position: absolute;
@@ -27,54 +25,53 @@
   top: 10rem;
   align-items: center;
   justify-content: center;
-  background-color: #021D44;
+  background-color: #021d44;
   height: 10rem;
- }
+}
 
 .toggle-btn {
- display:inline-block;
- padding:0.35em 1.2em;
- border:0.1em solid #FFFFFF;
- margin:0 0.3em 0.3em 0;
- border-radius:0.12em;
- font-weight:300;
- color:#ff3e55;
- text-align:center;
- text-decoration: none;
- font-size: 0.9vw;
- transition: all 0.2s;
- width: 9vw;
- height: 9vw;
- cursor:pointer;
- background-color:#021D44;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  font-weight: 300;
+  color: #ff3e55;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.9vw;
+  transition: all 0.2s;
+  width: 9vw;
+  height: 9vw;
+  cursor: pointer;
+  background-color: #021d44;
 }
 
 .toggle-btn-active {
- display:inline-block;
- padding: 0.35em 1.2em;
- border: none;
- margin: 0 0.3em 0.3em 0;
- border-radius: 0.12em;
- text-decoration: none;
- font-weight: 500;
- color:#ff3e55;
- text-align: center;
- text-decoration: none;
- font-size: 1vw;
- transition: all 0.2s;
- width: 9vw;
- height: 9vw;
- cursor:pointer;
- background-color:#FFFFFF;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: none;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ff3e55;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1vw;
+  transition: all 0.2s;
+  width: 9vw;
+  height: 9vw;
+  cursor: pointer;
+  background-color: #ffffff;
 }
 .toggle-btn:hover {
- color:#021D44;
- background-color:#FFFFFF;
- border:0.1em solid #FFFFFF;
+  color: #021d44;
+  background-color: #ffffff;
+  border: 0.1em solid #ffffff;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1366px)  {
-  
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
   .thumb-container {
     position: relative;
     left: 18vw;
@@ -83,57 +80,56 @@
     margin-top: 4rem;
     align-items: center;
     width: 100vw;
-   }
-  
-   .project {
-     position: relative;
-     width: 60vw;
-     height: 15vh;
-     margin: 1rem 1rem;
-     justify-content: center;
-     align-items: center;
-   }
-    
+  }
+
+  .project {
+    position: relative;
+    width: 60vw;
+    height: 15vh;
+    margin: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
   .filter-button-container {
     position: relative;
     left: 25vw;
     top: 10rem;
     align-items: center;
     justify-content: center;
-    background-color: #021D44;
+    background-color: #021d44;
     height: 10rem;
-   }
-  
+  }
+
   .toggle-btn {
-   display: inline-block;
-   margin:0;
-   width: 16vw;
-   height: 16vw;
-   font-size: 2.5vw;
-   }
-  
-   .toggle-btn-active {
-    display:inline-block;
-    padding:0.35em 1.2em;
-    border:none;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.12em;
-    text-decoration:none;
-    font-weight:500;
-    color:#ff3e55;
-    text-align:center;
+    display: inline-block;
+    margin: 0;
+    width: 16vw;
+    height: 16vw;
+    font-size: 2.5vw;
+  }
+
+  .toggle-btn-active {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: none;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ff3e55;
+    text-align: center;
     text-decoration: none;
     font-size: 2.8vw;
     transition: all 0.2s;
     width: 16vw;
     height: 16vw;
-    cursor:pointer;
-    background-color:#FFFFFF;
-   }
+    cursor: pointer;
+    background-color: #ffffff;
+  }
 }
 
 @media screen and (min-width: 721px) and (max-width: 1023px) {
-
   .thumb-container {
     position: relative;
     left: 2rem;
@@ -141,83 +137,75 @@
     justify-content: center;
     margin-top: 4rem;
     align-items: center;
-   }
-  
-   .project {
-     position: relative;
-     width: 80vw;
-     height: 15vh;
-     margin: 1rem 1rem;
-     justify-content: center;
-     align-items: center;
-   }
-    
+  }
+
+  .project {
+    position: relative;
+    width: 80vw;
+    height: 15vh;
+    margin: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
   .filter-button-container {
     position: relative;
     left: 10rem;
     top: 10rem;
     align-items: center;
     justify-content: center;
-    background-color: #021D44;
+    background-color: #021d44;
     height: 10rem;
-   }
-  
+  }
+
   .toggle-btn {
-   display: inline-block;
-   margin:0;
-   width: 16vw;
-   height: 16vw;
-   font-size: 2.5vw;
-   }
-  
-   .toggle-btn-active {
-    display:inline-block;
-    padding:0.35em 1.2em;
-    border:none;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.12em;
-    text-decoration:none;
-    font-weight:500;
-    color:#ff3e55;
-    text-align:center;
+    display: inline-block;
+    margin: 0;
+    width: 16vw;
+    height: 16vw;
+    font-size: 2.5vw;
+  }
+
+  .toggle-btn-active {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: none;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ff3e55;
+    text-align: center;
     text-decoration: none;
     font-size: 2.8vw;
     transition: all 0.2s;
     width: 16vw;
     height: 16vw;
-    cursor:pointer;
-    background-color:#FFFFFF;
-   }
+    cursor: pointer;
+    background-color: #ffffff;
+  }
 }
-
-
 
 @media all and (max-width: 720px) {
+  .thumb-container {
+    position: absolute;
+    left: 1rem;
+    top: 10rem;
+    justify-content: center;
+    margin-top: 4rem;
+    align-items: center;
+  }
 
+  .project {
+    position: relative;
+    width: 80vw;
+    height: 10vh;
+    margin: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
 
-.thumb-container {
-  position: absolute;
-  left: 1rem;
-  top: 10rem;
-  justify-content: center;
-  margin-top: 4rem;
-  align-items: center;
- }
-
- .project {
-   position: relative;
-   width: 80vw;
-   height: 10vh;
-   margin: 1rem 1rem;
-   justify-content: center;
-   align-items: center;
- }
-  
- .filter-button-container {
-  display: none;
- }
-
+  .filter-button-container {
+    display: none;
+  }
 }
-
-
-    

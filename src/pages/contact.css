@@ -1,112 +1,111 @@
- /* CONTACT CSS */
-   
- .main-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-   }
+/* CONTACT CSS */
 
-   .contact {
-    grid: 1/2;
-    width: 20vw;
-   }
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
 
-   .contact-form {
-    grid: 2/3;
-    background-color:transparent;
-    width: 60vw;
-    max-width: 50%;
-    border-radius: 20px;
-    margin: 0 10vw;
-   }
-   
-   .input-group {
-    margin-bottom:-1rem;
+.contact {
+  grid: 1/2;
+  width: 20vw;
+}
+
+.contact-form {
+  grid: 2/3;
+  background-color: transparent;
+  width: 60vw;
+  max-width: 50%;
+  border-radius: 20px;
+  margin: 0 10vw;
+}
+
+.input-group {
+  margin-bottom: -1rem;
+  display: block;
+  resize: vertical;
+  width: 100%;
+}
+
+.input-group:last-child {
+  margin-bottom: 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0rem;
+  font-size: 2vw;
+}
+
+.input-group .form-input {
+  outline: none;
+  font-size: 2vw;
+  padding: 0.5em;
+  border: none;
+  border-bottom: 0.1rem solid #ff3e55;
+  background: transparent;
+}
+
+.input-group .form-input:focus {
+  border-color: #1762a7;
+}
+
+.contact-text {
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 0;
+  color: #ff3e55;
+}
+
+.send-btn {
+  color: #ffff;
+  background-color: #ff3e55;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9vw;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.send-btn:hover {
+  background-color: #ff3e59;
+}
+
+.send-btn:focus {
+  background-color: #ff3e55;
+}
+
+.form-control {
+  outline: none;
+  overflow: auto;
+  font-size: 1em;
+  padding: 0.5em;
+  color: #ff3e55;
+  resize: vertical;
+  width: 60%;
+  border: none;
+  border-bottom: 0.1rem solid #ff3e55;
+  background: transparent;
+}
+
+.form-control:focus {
+  border-color: #1762a7;
+}
+
+.form-input {
+  color: #ff3e55;
+}
+
+@media (max-width: 900px) {
+  .form-input .form-control {
     display: block;
-    resize: vertical;
-    width: 100%;
-   }
-
-   .input-group:last-child {
-    margin-bottom: 0;
-   }
-
-   .input-group label {
-    display:block;
-    margin-bottom: 0rem;
-    font-size: 2vw;
-   }
-
-   .input-group .form-input {
-    outline:none;
-    font-size: 2vw;
-    padding: 0.5em;
-    border: none;
-    border-bottom: 0.1rem solid #ff3e55;
-    background: transparent;
-   }
-
-   .input-group .form-input:focus {
-    border-color:#1762a7;
-   }
-   
-   .contact-text {
-    font-size: 3vw;
-    font-weight: bold;
-    margin: 0;
-    color: #ff3e55; 
-   }
-
-   .send-btn {
-    color:#ffff;
-    background-color:#ff3e55;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-size: 0.9vw;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
   }
-
-   .send-btn:hover {
-    background-color:#ff3e59;
+  .form-input .form-control .btn-send {
+    width: 100vw;
+    padding: 100vw;
   }
-
-   .send-btn:focus{
-    background-color:#ff3e55;
-   }
-
-   .form-control {
-     outline: none;
-     overflow: auto;
-     font-size: 1em;
-     padding: 0.5em;
-     color: #ff3e55;
-     resize: vertical;
-     width: 60%;
-     border: none;
-     border-bottom: 0.1rem solid #ff3e55;
-     background: transparent;
-     
-   }
-
-   .form-control:focus {
-    border-color:#1762a7;
-   }
-
-   .form-input {
-   color:#ff3e55;
-   }
-
-   @media(max-width: 900px) {
-     .form-input .form-control {
-        display: block;
-       }
-     .form-input .form-control .btn-send {
-      width: 100vw;
-      padding: 100vw;
-     }
-    }
+}

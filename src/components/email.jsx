@@ -1,39 +1,37 @@
 import React, { Component } from "react";
-import { BsEnvelope } from 'react-icons/bs';
-import copy from "copy-to-clipboard"; 
-import './email.css';
+import { BsEnvelope } from "react-icons/bs";
+import copy from "copy-to-clipboard";
+import "./email.css";
 
 export default class Email extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       email: "anna.marino@yahoo.es",
-      isCopied: false
-    }
+      isCopied: false,
+    };
   }
 
-    copyEmail = () => {  
+  copyEmail = () => {
     copy(this.state.email);
-    this.setState({isCopied: true})
-    }  
-  
+    this.setState({ isCopied: true });
+  };
 
   render() {
-      const{ email, isCopied } = this.state;
+    const { email, isCopied } = this.state;
 
     return (
       <div>
         <div>
-          <a onClick={() => this.copyEmail()} ><BsEnvelope/></a>
-          {
-            isCopied ?
-            <div className="message">
-               Email successfully copied!
-            </div> : null
-          }
+          <a onClick={() => this.copyEmail()}>
+            <BsEnvelope />
+          </a>
+          {isCopied ? (
+            <div className="message">Email successfully copied!</div>
+          ) : null}
         </div>
       </div>
-    )
+    );
   }
 }
