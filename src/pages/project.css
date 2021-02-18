@@ -109,7 +109,7 @@
 .project-img {
   position: absolute;
   width: 30vw;
-  top: -12rem;
+  top: -20rem;
   right: -10rem;
   left: -15rem;
   z-index: 1;
@@ -123,6 +123,8 @@
   padding: 14rem;
   margin-top: 65%;
   margin-bottom: 1rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
   position: relative;
   z-index: 4;
 }
@@ -136,6 +138,7 @@
   margin-bottom: 10rem;
   position: relative;
   z-index: 4;
+  margin-left: 12rem;
 }
 
 .mobile {
@@ -199,6 +202,7 @@
     display: block;
     position: relative;
     padding: 0;
+    margin: 0 auto;
   }
 
   .project-url {
@@ -221,6 +225,7 @@
   .presentation-mobile {
     display: block;
     position: relative;
+    margin: 0 auto;
   }
 
   .mobile-inner {
@@ -280,6 +285,7 @@
     display: block;
     position: relative;
     padding: 0;
+    margin: 0 auto;
   }
 
   .project-url {
@@ -302,6 +308,7 @@
   .presentation-mobile {
     display: block;
     position: relative;
+    margin: 0 auto;
   }
 
   .mobile-inner {
