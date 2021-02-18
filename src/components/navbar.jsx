@@ -16,6 +16,11 @@ const NavBar = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <React.Fragment>
       <div className="navbar">
@@ -61,15 +66,17 @@ const NavBar = () => {
             </NavLink>
           </li> */}
           <li className="icon">
-            <a
-              href="https://www.twitter.com/annamardesign"
+            <button
+              onClick={() =>
+                openInNewTab("https://www.twitter.com/annamardesign")
+              }
               data-tip="twitter"
               data-for="twitter"
               className="social"
               activeclassname="active"
             >
               <FiTwitter />
-            </a>
+            </button>
           </li>
           <ReactTooltip
             id="twitter"
@@ -79,15 +86,17 @@ const NavBar = () => {
             effect="solid"
           />
           <li className="icon">
-            <a
-              href="https://www.github.com/annamardesign"
+            <button
+              onClick={() =>
+                openInNewTab("https://www.github.com/annamardesign")
+              }
               data-tip="git"
               data-for="git"
               className="social"
               activeclassname="active"
             >
               <FiGithub />
-            </a>
+            </button>
           </li>
           <ReactTooltip
             id="git"
@@ -97,15 +106,15 @@ const NavBar = () => {
             effect="solid"
           />
           <li className="icon">
-            <a
-              href="https://www.behance.net/AnnaMarino"
+            <button
+              onClick={() => openInNewTab("https://www.behance.net/AnnaMarino")}
               data-tip="behance"
               data-for="behance"
               className="social"
               activeclassname="active"
             >
               <RiBehanceLine />
-            </a>
+            </button>
           </li>
           <ReactTooltip
             id="behance"
@@ -115,15 +124,15 @@ const NavBar = () => {
             effect="solid"
           />
           <li className="icon">
-            <a
-              href="https://codepen.io/annamardesign"
+            <button
+              onClick={() => openInNewTab("https://codepen.io/annamardesign")}
               data-tip="codepen"
               data-for="codepen"
               className="social"
               activeclassname="active"
             >
               <FiCodepen />
-            </a>
+            </button>
           </li>
           <ReactTooltip
             id="codepen"
