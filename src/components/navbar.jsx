@@ -23,11 +23,21 @@ const NavBar = () => {
 
   return (
     <React.Fragment>
-      <div className="navbar">
-        <NavLink to="/resume" className="logo" onClick={closeMobileMenu}>
-          <Logo />
+      <div className="navbar" role="navigation">
+        <NavLink
+          to="/resume"
+          className="logo"
+          onClick={closeMobileMenu}
+          aria-label="logo"
+          aria-current="page"
+        >
+          <Logo aria-label="logo" />
         </NavLink>
-        <div className="menu-icon" onClick={handleClick}>
+        <div
+          className="menu-icon"
+          onClick={handleClick}
+          aria-label="mobile-menu-button"
+        >
           {click ? (
             <TiTimes className="close" />
           ) : (
@@ -38,6 +48,7 @@ const NavBar = () => {
           <li className="nav-item">
             <NavLink
               to="/resume"
+              aria-label="resume"
               className="navli"
               activeClassName="active"
               onClick={closeMobileMenu}
@@ -48,6 +59,7 @@ const NavBar = () => {
           <li className="nav-item">
             <NavLink
               to="/projects"
+              aria-label="projects"
               className="navli"
               activeClassName="active"
               onClick={closeMobileMenu}
@@ -72,6 +84,7 @@ const NavBar = () => {
               }
               data-tip="twitter"
               data-for="twitter"
+              aria-label="twitter link"
               className="social"
               activeclassname="active"
             >
@@ -92,6 +105,7 @@ const NavBar = () => {
               }
               data-tip="git"
               data-for="git"
+              aria-label="git link"
               className="social"
               activeclassname="active"
             >
@@ -110,6 +124,7 @@ const NavBar = () => {
               onClick={() => openInNewTab("https://www.behance.net/AnnaMarino")}
               data-tip="behance"
               data-for="behance"
+              aria-label="behance link"
               className="social"
               activeclassname="active"
             >
@@ -128,6 +143,7 @@ const NavBar = () => {
               onClick={() => openInNewTab("https://codepen.io/annamardesign")}
               data-tip="codepen"
               data-for="codepen"
+              aria-label="codepen link"
               className="social"
               activeclassname="active"
             >

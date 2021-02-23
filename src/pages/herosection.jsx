@@ -8,10 +8,10 @@ import "./herosection.css";
 const Herosection = () => {
   return (
     <div className="grid-wrapper">
-      <div className="frontend">
+      <div className="frontend" role="animation">
         <Animation className="animation" />
       </div>
-      <article className="article">
+      <article className="article" role="about me introduction">
         <div className="about-me">
           <p class-name="intro-line">
             {" "}
@@ -35,6 +35,7 @@ const Herosection = () => {
           <li className="cv">
             <Link
               to={Pdf}
+              aria-label="resume link"
               style={{ fontSize: "1.2rem" }}
               target="_blank"
               download
@@ -43,7 +44,7 @@ const Herosection = () => {
             </Link>
           </li>
           <li className="email">
-            <Email />
+            <Email aria-label="copy my email" />
           </li>
         </ul>
       </article>

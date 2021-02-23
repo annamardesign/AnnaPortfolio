@@ -25,7 +25,7 @@ const Project = ({ match, history }) => {
 
   return (
     <div className="page">
-      <article className="project-case-study">
+      <article className="project-case-study" role="project case study">
         <div className="sticky">{project.title}</div>
         <div className="project-name">
           <img
@@ -43,11 +43,16 @@ const Project = ({ match, history }) => {
           <button
             onClick={() => openInNewTab(`${project.url}`)}
             className="project-url"
+            aria-label="project link"
           >
             Visit web site
           </button>
         </div>
-        <button className="back-btn" onClick={() => history.push("/projects")}>
+        <button
+          className="back-btn"
+          aria-label="back button"
+          onClick={() => history.push("/projects")}
+        >
           <TiArrowBackOutline
             style={{ color: "#fff", fontSize: "2vw", fontWeight: "normal" }}
           />

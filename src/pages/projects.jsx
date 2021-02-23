@@ -26,14 +26,14 @@ export default class Projects extends Component {
         : projectsData;
     return (
       <div className="flex-wrap">
-        <div className="filter-button-container">
+        <div className="filter-button-container" role="filter category">
           <ListGroup
             items={this.state.category}
             selectedItem={this.state.selectedCategory}
             onItemSelect={this.handleCategorySelect}
           />
         </div>
-        <div className="thumb-container">
+        <div className="thumb-container" role="project preview">
           {filtered.map((projectsData) => (
             <Thumbnail
               className="thumbnail"
