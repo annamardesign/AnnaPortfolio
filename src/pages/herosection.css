@@ -3,6 +3,11 @@ body {
   margin: 0;
   font-size: 1.2em;
   background-color: #021d44;
+  position: relative;
+}
+
+html,
+body {
   overflow-x: hidden;
 }
 

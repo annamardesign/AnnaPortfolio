@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
 .navbar {
   background: #021d44;
   width: 100vw;

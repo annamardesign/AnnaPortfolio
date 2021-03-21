@@ -24,7 +24,7 @@ const Project = ({ match, history }) => {
   }, []);
 
   return (
-    <div className="page">
+    <React.Fragment>
       <article className="project-case-study" role="project case study">
         <div className="sticky">{project.title}</div>
         <div className="project-name">
@@ -67,7 +67,7 @@ const Project = ({ match, history }) => {
         <img src={project.mobileInner} className="mobile-inner"></img>
         <img src={project.mobileMore} className="mobile-more"></img>
       </section>
-    </div>
+    </React.Fragment>
   );
 };
 

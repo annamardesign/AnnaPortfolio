@@ -109,11 +109,10 @@
 .project-img {
   position: absolute;
   width: 30vw;
-  top: -20rem;
+  top: 1rem;
   right: -10rem;
   left: -15rem;
   z-index: 1;
-  margin: 5rem auto;
 }
 
 .presentation {
@@ -123,10 +122,11 @@
   padding: 14rem;
   margin-top: 65%;
   margin-bottom: 1rem;
-  margin-left: 12rem;
+  margin-left: 2rem;
   margin-right: 12rem;
   position: relative;
   z-index: 4;
+  width: 100vw;
 }
 
 .presentation-mobile {
@@ -139,14 +139,14 @@
   position: relative;
   z-index: 4;
   margin-left: 12rem;
+  width: 100vw;
 }
 
 .mobile {
   grid-column: 1/2;
   width: 20vw;
   top: -150%;
-  right: -10rem;
-  left: -10rem;
+  left: -12rem;
   margin: 1rem auto;
   border-radius: 15%/7%;
   box-shadow: 0 2px 200px 0 #000, 0 2px 50px 0 #000;
@@ -349,7 +349,6 @@
     top: 40vh;
     left: 50vw;
     width: 100%;
-    position: relative;
   }
 
   .objective {

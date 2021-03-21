@@ -19,6 +19,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 @-webkit-keyframes show {

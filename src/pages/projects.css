@@ -1,11 +1,15 @@
 /* PROJECTS CSS */
+body {
+  overflow-x: hidden;
+  position: relative;
+}
 
 .flex-wrap {
   height: auto;
   display: flex;
   flex-direction: column;
   flex-basis: 1;
-  width: 100%;
+  width: 100vw;
 }
 
 .thumb-container {

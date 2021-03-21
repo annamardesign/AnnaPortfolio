@@ -5,8 +5,6 @@ import Logo from "./logo";
 import Herosection from "./pages/herosection";
 import Project from "./pages/project";
 import Projects from "./pages/projects";
-import Freebies from "./pages/freebies";
-import Contact from "./pages/contact";
 
 const App = () => {
   return (
@@ -19,7 +17,6 @@ const App = () => {
           <Route path="/projects/:id" component={Project} />
           <Route path="/projects" component={Projects} />
           {/* <Route path="/freebies" component={Freebies} /> */}
-          <Route path="/contact" component={Contact} />
           <Redirect from="/" exact to="/resume" />
           <Redirect from="/logo" exact to="/resume" />
           <Redirect to="/not-found" />
